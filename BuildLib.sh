@@ -9,6 +9,11 @@ FuncDir="functions"
 BackupDir="_Backups"
 LibDir="lib"
 
+### Define Our Functions ### 
+	## TODO: Move to functions folder and source it.
+	
+# Sanity Checks #
+
 CheckFuncDir() {
 ## Sanity Check - Functions Folder ##
 if [ ! -d $FuncDir ]; then 
@@ -43,6 +48,7 @@ if [ ! -f $BlingLib ]; then
 fi
 }
 
+# Library Functions #
 BlingBackup="BlingLibBackup"
 BackupLib() {
 ## Backup Library If Exists ###
@@ -62,7 +68,15 @@ cat $FuncDir/*.func > $LibDir/BlingBuild_`date +%Y%m%d%H%M`.blib
 echo "BlingLib Rebuild Completed."
 }
 
+# Banner Function #
+DisplayBanner() {
+	echo "BLING Library Compiler."
+	echo "Version 0.1"
+}
+	
+
 ### Main Program ###
+DisplayBanner
 CheckFuncDir
 CheckBackupDir
 CheckLibDir
