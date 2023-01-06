@@ -9,8 +9,8 @@ SearchString2="anovas"
 
 FILE="README"
 FILE2="README2"
-# grep -iw savona README
-### grep -iw $SearchString $FILE
+grep -iw savona README
+grep -iw $SearchString $FILE
 
 DisplayResults() {
 if [ "$?" == "0" ]; then
