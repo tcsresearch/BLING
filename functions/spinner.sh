@@ -1,4 +1,5 @@
 #!/bin/bash
+# SpinRunner:  Creates a spinning cursor while anopther program is working.
 # spinner.sh -	 Taken From: https://www.linuxjournal.com/content/creating-bash-spinner
 #		`Modified by TCS Research.
 #
