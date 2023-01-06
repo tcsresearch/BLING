@@ -7,9 +7,9 @@ RESET='\033[0m'
 SearchString="savona"
 SearchString2="anovas"
 
-FILE="README"
-FILE2="README2"
-grep -iw savona README
+FILE="TestFile1"
+FILE2="TestFile2"
+grep -iw supersillystring README
 grep -iw $SearchString $FILE
 
 DisplayResults() {
