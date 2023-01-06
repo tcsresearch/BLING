@@ -16,4 +16,6 @@ BLING is a collection of BASH libraries. It is a collection of functions useful 
   <li> Use -v for verbose as argument for each function; use -q for quiet. </li>
   <li> Fix BuildLib.sh script: backups arent moved to $BackupDir. </li>
   <li> Finish implementing ColorLib a.k.a. Cecho. -Add a plethora of useful functions. </li>
+  <li> Test new BuildLib2.sh utility - Uses a separate functions file (BuildLib.func). </li>
+  <li> Ensure that move of built libraries to /lib works as expected. </li>
 </div>
