@@ -1,6 +1,7 @@
 flip-top10-noversiondisplay() {
   echo "FLIPTool - Find Largest Installed Packages (FLIP) Tool"
-  echo "Listing Type: Top 10 - No Version Display"
+  echo "Listing Type: Top 10"
+  echo "Version Display: No"
   echo "Top 10 Largest Installed Packages:"
   echo "All sizes are shown in megabytes (MB)."
 
