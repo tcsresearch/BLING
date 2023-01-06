@@ -7,6 +7,7 @@
 ## Define Folder Variables ##
 FuncDir="functions"
 BackupDir="_Backups"
+LibDir="lib"
 
 CheckFuncDir() {
 ## Sanity Check - Functions Folder ##
@@ -23,6 +24,15 @@ if [ ! -d $BackupDir ]; then
 	exit 2
 fi
 }
+
+CheckLibDir() {
+## Sanity Check - Library Folder ##
+if [ ! -d $LibDir ]; then
+	echo "ERROR! Folder $LibDir does not exist.  Quitting..."
+	exit 3
+fi
+}
+
 
 BlingLib="Bling_Library"
 CheckLib() {
@@ -48,13 +58,14 @@ fi
 
 BuildLib() {
 # for i in $FuncDir/*.func;do cat $i > $BlingLib;done
-cat $FuncDir/*.func > BlingBuild_`date +%Y%m%d%H%M`.blib
+cat $FuncDir/*.func > $LibDir/BlingBuild_`date +%Y%m%d%H%M`.blib
 echo "BlingLib Rebuild Completed."
 }
 
 ### Main Program ###
 CheckFuncDir
 CheckBackupDir
+CheckLibDir
 # CheckLib
 BackupLib
 BuildLib
