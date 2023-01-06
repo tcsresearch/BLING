@@ -40,8 +40,8 @@ DisplayResults4() {
 
 
 Test1() {
-	FILE="README"
-	SearchString="savona"
+	FILE="TestFile1"
+	SearchString="supersillystring"
 	echo -e "${White}Search String Is: ${Blue}$SearchString${Reset}."
 	echo -e "${White}Search File Is: ${Blue}${FILE}${Reset}."
 	grep -iw $SearchString $FILE
@@ -49,8 +49,8 @@ Test1() {
 }
 
 Test2() {
-	FILE="README2"
-	SearchString="anovas"
+	FILE="TestFile2"
+	SearchString="stringissupersilly"
 	echo -e "${White}Search String Is: ${Blue}$SearchString${Reset}."
 	echo -e "${White}Search File Is: ${Blue}${FILE}${Reset}."
 	grep -iw $SearchString $FILE
