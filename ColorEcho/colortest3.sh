@@ -4,15 +4,6 @@ RED='\033[0;31m'
 WHITE='\033[0;37m'
 RESET='\033[0m'
 
-# SearchString="savona"
-# SearchString2="anovas"
-
-# FILE="README"
-# FILE2="README2"
-
-# grep -iw savona README
-# grep -iw $SearchString $FILE
-# grep -iw $SearchString2 $FILE2
 
 DisplayResults() {
 	if [ "$?" == "0" ]; then
@@ -50,8 +41,8 @@ DisplayResults4() {
 
 
 Test1() {
-	FILE="README"
-	SearchString="savona"
+	FILE="TestFile1"
+	SearchString="supersillystring"
 	echo -e "${WHITE}Search String Is: ${BLUE}$SearchString${RESET}."
 	echo -e "${WHITE}Search File Is: ${BLUE}${FILE}${RESET}."
 	grep -iw $SearchString $FILE
@@ -59,8 +50,8 @@ Test1() {
 }
 
 Test2() {
-	FILE="README2"
-	SearchString="anovas"
+	FILE="TestFile2"
+	SearchString="stringissupersilly"
 	echo -e "${WHITE}Search String Is: ${BLUE}$SearchString${RESET}."
 	echo -e "${WHITE}Search File Is: ${BLUE}${FILE}${RESET}."
 	grep -iw $SearchString $FILE
