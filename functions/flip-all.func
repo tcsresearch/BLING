@@ -1,3 +1,5 @@
 flip-all() {
+  echo "FLIPTool - Find Largest Installed Packages (FLIP) Tool"
+  echo "Listing Type: Show All"
   rpm -qa --queryformat '%10{size} - %-25{name} \t %{version}\n' | sort -n
 }
