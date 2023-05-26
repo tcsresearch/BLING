@@ -1,5 +1,5 @@
-# tcs-scripts
-Misc. Scripts We Use
+# BLING-Plugins (formerly tcs-scripts)
+Misc. Scripts We Use - will become plugins for BLING
 
 <div id="Warning">
 <b>WARNING!  Highly experimental Projects Here!  Use At Your Own Risk.</b><br>
