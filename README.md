@@ -27,6 +27,7 @@ BLING is a collection of BASH libraries. It is a collection of functions useful 
     <li> The BuildLib Tool may no longer be necessary.  We can use a for statement to parse all .func files at once. </li>
     <li> A few new functions (Cecho, FLIPTool) have been added. </li>
  </div>
+ <hr>
 <div id="Updates_05-2023">
   <b>Updates 05/2023</b>
     <li> Added _Plugins-Dev Folder. </li>
