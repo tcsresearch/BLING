@@ -1,4 +1,4 @@
-BLING - Bash Library Implementtion - Next Gen
+BLING - Bash Library Implementation - Next Gen
 <hr>
 BLING is a collection of BASH libraries. It is a collection of functions useful for BASH scripts.
 <p>
