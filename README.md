@@ -1,24 +1,27 @@
-BLING - Bash Library Implementation - Next Gen
+<h3> BLING - Bash Library Implementation - Next Gen </h3>
 <hr>
 BLING is a collection of BASH libraries. It is a collection of functions useful for BASH scripts.
+<hr>
+<h3> :warning: This code is highly experiemental and has NOT been fully implemented or tested yet. :warning: </h3>
+<hr>
 <p>
 <div id="Proposed-Features">
   <b>Proposed Features</b>
-    <li> Each function is contained within its own file </li>
-    <li> ~~ [DEPRECATED] A script that parses all functions in functions/ folder into a single library file. ~~ </li> 
-    <li> ~~ [DEPRECATED] A utility to allow running an individual function for testing purposes. (ftest or functest) ~~ </li> 
-    <li> An easy way to easily integrate the library into future scripts, incl. 3rd party scripts. </li>
-    <li> RPM/DEB packaging for various platforms (Fedora/CentOS/Debian/Ubuntu/Raspberry Pi, etc.) </li>
+    <li> :ballot_box_with_check: [PLANNED] Each function is contained within its own file. :ballot_box_with_check: </li>
+    <li> :x: [DEPRECATED] A script that parses all functions in functions/ folder into a single library file. :x: </li> 
+    <li> :x: [DEPRECATED] A utility to allow running an individual function for testing purposes. (ftest or functest) :x: </li> 
+    <li> :ballot_box_with_check: [PLANNED] An easy way to easily integrate the library into future scripts, incl. 3rd party scripts. :ballot_box_with_check: </li>
+    <li> :ballot_box_with_check: [PLANNED] RPM/DEB packaging for various platforms (Fedora/CentOS/Debian/Ubuntu/Raspberry Pi, etc.) :ballot_box_with_check: </li>
 </div>
 <hr>
 <div id="TODO">
   <b>TODO</b>
-    <li> [PLANNED] Use -v for verbose as argument for each function; use -q for quiet. </li>
-    <li> [IN PROGRESS] Add a plethora of useful functions. </li>  
-    <li> [TESTABLE] Finish implementing ColorLib a.k.a. Cecho. </li>
-    <li> ~~ [DEPRECATED] Fix BuildLib.sh script: backups aren't moved to $BackupDir. ~~ </li>
-    <li> ~~ [DEPRECATED] Test new BuildLib2.sh utility - Uses a separate functions file (BuildLib.func). ~~ </li>
-    <li> ~~ [DEPRECATED] Ensure that move of built libraries to /lib works as expected. ~~ </li>
+    <li> :ballot_box_with_check: [PLANNED] Use -v for verbose as argument for each function; use -q for quiet. :ballot_box_with_check: </li>
+    <li> :ballot_box_with_check: [IN PROGRESS] Add a plethora of useful functions. :ballot_box_with_check: </li>  
+    <li> :heavy_check_mark: [TESTABLE] Finish implementing ColorLib a.k.a. Cecho. :heavy_check_mark: </li>
+    <li> :x: [DEPRECATED] Fix BuildLib.sh script: backups aren't moved to $BackupDir. :x: </li>
+    <li> :x: [DEPRECATED] Test new BuildLib2.sh utility - Uses a separate functions file (BuildLib.func). :x: </li>
+    <li> :x: [DEPRECATED] Ensure that move of built libraries to /lib works as expected. :x: </li>
 </div>
 <hr>
 <div id="Updates_01-2023">
