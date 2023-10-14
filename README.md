@@ -10,7 +10,7 @@ BLING is a collection of BASH libraries. It is a collection of functions useful 
     <li> :ballot_box_with_check: [PLANNED] Each function is contained within its own file. :ballot_box_with_check: </li>
     <li> :x: [DEPRECATED] A script that parses all functions in functions/ folder into a single library file. :x: </li> 
     <li> :x: [DEPRECATED] A utility to allow running an individual function for testing purposes. (ftest or functest) :x: </li> 
-    <li> :ballot_box_with_check: [PLANNED] An easy way to easily integrate the library into future scripts, incl. 3rd party scripts. :ballot_box_with_check: </li>
+    <li> :ballot_box_with_check: [PLANNED] An easy way to easily integrate the library into future scripts. :ballot_box_with_check: </li>
     <li> :ballot_box_with_check: [PLANNED] RPM/DEB packaging for various platforms (Fedora/CentOS/Debian/Ubuntu/Raspberry Pi, etc.) :ballot_box_with_check: </li>
 </div>
 <hr>
