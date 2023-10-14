@@ -7,6 +7,7 @@ This will provide several handy tools for working with the Linux Kernel.
     <li> Each function is contained within its own file </li>
     <li> Install, remove, and reinstall kernel packages easily by version (e.g. kernel-core, kernel-devel, etc in one command). </li> 
     <li> Check and save current running kernel config. (ftest or functest) </li> 
+    <li> Ability to check status of <a href="https://man7.org/linux/man-pages/man7/kernel_lockdown.7.html"> kernel lockdown </a> feature.  </li>
     <li> Ability to easily modify kernel configs and apply standard changes across upgraded kernel versions. </li>
     <li> RPM/DEB packaging for various platforms (Fedora/CentOS/Debian/Ubuntu/Raspberry Pi, etc.) </li>
 </div>
