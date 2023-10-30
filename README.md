@@ -1,6 +1,6 @@
 <h3> BLING - Bash Library Implementation - Next Gen </h3>
 <hr>
-BLING is a collection of BASH libraries. It is a collection of functions useful for BASH scripts.
+BLING is a BASH library.  It contains a collection of functions useful for BASH scripts.
 <hr>
 <h3> :warning: This code is highly experiemental and has NOT been fully implemented or tested yet. :warning: </h3>
 <hr>
