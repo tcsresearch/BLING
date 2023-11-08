@@ -1,0 +1,5 @@
+# barels.func - ls command but barebones
+# Taken From: https://superuser.com/questions/97905/tell-ls-to-print-only-the-base-filename
+function barels () {
+  ls | tr '\n' '\n'
+  }
