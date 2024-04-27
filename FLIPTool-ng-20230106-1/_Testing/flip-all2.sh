@@ -3,7 +3,7 @@
 corecmd="rpm -qa"
 queryformatargs="--queryformat '%10{size} - %-25{name} \t %{version}\n' "
 queryformatargs2=" '%10{size} - %-25{name} \t %{version}\n'"
-qfargs3=" '%10{size} - %-25{name} \t' "
+queryformatargs3=" '%10{size} - %-25{name} \t' "
 
 # The queryformatargs are broken down individually here:
 querysize=" %10{size}"
