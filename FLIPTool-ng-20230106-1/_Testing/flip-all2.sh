@@ -1,16 +1,16 @@
 ## TODO: Fix queryformartargs - not working
 
 corecmd="rpm -qa"
-queryformatargs="--queryformat '%10{size} - %-25{name} \t %{version}\n' "
-queryformatargs2=" '%10{size} - %-25{name} \t %{version}\n'"
+queryformatargs=" --queryformat '%10{size} - %-25{name} \t %{version}\n' "
+queryformatargs2=" '%10{size} - %-25{name} \t %{version}\n' "
 queryformatargs3=" '%10{size} - %-25{name} \t' "
 
 # The queryformatargs are broken down individually here:
-querysize=" %10{size}"
-queryname="%-25{name}"
-queryversion="%{version}"
+querysize=" %10{size} "
+queryname=" %-25{name} "
+queryversion=" %{version} "
 
-sortargs=" -rh" # initial options: -n / -rh
+sortargs=" -rh " # initial options: -n / -rh
 
 ### $corecmd $queryformatargs | sort $sortargs
 
