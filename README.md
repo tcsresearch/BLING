@@ -18,6 +18,8 @@ BLING is a BASH library.  It contains a collection of functions useful for BASH 
   <b>TODO</b>
     <li> :heavy_check_mark: [TESTABLE] Finish implementing ColorLib a.k.a. Cecho. :heavy_check_mark: </li>
     <li> :ballot_box_with_check: ✅ [IN PROGRESS] Add a plethora of useful functions. ✅ :ballot_box_with_check: </li> 
+    <li> :ballot_box_with_check:     [IN PROGRESS] Rename all fucntions to use .bfunc extension. ☑️ </li>
+    <li> :ballot_box_with_check:     [IN PROGRESS] Test all functions. </li> 
     <li> :ballot_box_with_check: [PLANNED] Use -v for verbose as argument for each function; use -q for quiet. :ballot_box_with_check: </li>
     <li> :x: [DEPRECATED] Fix BuildLib.sh script: backups aren't moved to $BackupDir. :x: </li>
     <li> :x: [DEPRECATED] Test new BuildLib2.sh utility - Uses a separate functions file (BuildLib.func). :x: </li>
