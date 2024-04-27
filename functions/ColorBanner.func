@@ -1,5 +1,6 @@
 # Taken From: https://unix.stackexchange.com/questions/70615/bash-script-echo-output-in-box
-# Multi line banners are generated like `banner ${COLOR} ${OPTIONAL_SECONDCOLOR} "first line" "second line" "third line"`
+# USAGE: Multi line banners are generated like `banner ${COLOR} ${OPTIONAL_SECONDCOLOR} "first line" "second line" "third line"`
+#
 function banner() {
     local s=("${@:3}") b w
     local second_color=$2
