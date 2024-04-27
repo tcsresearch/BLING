@@ -1,0 +1,6 @@
+# duls.bfunc - combines 'du' and 'ls' for folder size display when using 'ls'
+# taken from: https://stackoverflow.com/questions/1019116/using-ls-to-list-directories-and-their-total-sizes
+# 
+function duls {
+    paste <( du -hs -- "$@" | cut -f1 ) <( ls -ldf -- "$@" )
+}
