@@ -26,6 +26,12 @@ BLING is a BASH library.  It contains a collection of functions useful for BASH 
     <li> :x: [DEPRECATED] Ensure that move of built libraries to /lib works as expected. :x: </li>
 </div>
 <hr>
+<div id="Updates_04-2024">
+  <b>Updates 04/2024</b>
+    <li> Add new function duls. </li>
+</div>
+ <hr>
+<hr>
 <div id="Updates_03-2024">
   <b>Updates 03/2024</b>
     <li> Add new functions IfFileExists and IfFolderExists. </li>
