@@ -2,6 +2,7 @@
 #   Version 0.1
 #   This utility will check the size of the buildroot and clean it when needed.
 #
+########## BEGIN BUILDROOT FOLDERS ##########
 BuildRoot_Root="/root/buildroot"
 ## TODO: Add amiroot.sh fucntionality as function
 #
@@ -15,10 +16,12 @@ BuildRoot_CurrentUser="~/buildroot"
 #		Finish and test variable functionality.
 #		Add buildroot backup function.
 #		Integrate functions into program.
+########## END BUILDROOT FOLDERS ##########
 
 ### Variable Definitions ###
 FolderList="BUILD BUILDROOT"
 
+### Functions ###
 Size_BuildRoot() {
 	du -sh BUILD
 	du -sh BUILDROOT
