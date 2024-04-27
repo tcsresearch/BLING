@@ -1,7 +1,8 @@
 # Taken From: https://unix.stackexchange.com/questions/70615/bash-script-echo-output-in-box
 #
-### Call it with multiple parameters, like EchoBox 'first line' 'more line' 'even more line'.
+### USAGE:  Call it with multiple parameters, like EchoBox 'first line' 'more line' 'even more line'.
 # function box_out()
+#
 function EchoBox()
 {
   local s=("$@") b w
