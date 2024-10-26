@@ -11,6 +11,7 @@ function SaveKernelRuinningConfig() {
 }
 
 function GetKernelVersion() {
+  # FIXME: Running doesnt work, but typing in manually does.
   KernelVersion=`uname -r`
   echo "Kernel Version Is: $KernelVersion."
   }
