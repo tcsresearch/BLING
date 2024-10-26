@@ -10,7 +10,7 @@ SaveKernelRuinningConfig() {
   echo "Kernel Config Saved."
 }
 
-GetCurrentRunning KernelVersion() {
+GetCurrentRunningKernelVersion() {
   KernelVersion=`uname -r`
   echo "Kernel Version Is: $KernelVersion."
   }
