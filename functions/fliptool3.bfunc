@@ -1,0 +1,1 @@
+dnf repoquery -C --installed --qf "%{size} %{name}" | sort -n | numfmt --to=iec --format="%.2f"
