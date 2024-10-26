@@ -23,9 +23,12 @@ KISSChecker will run various static analyser checks on the Linux kernel, as per 
     </summary>
     <ul>
       <li> Stop Program if not in built Kernel directory (SanityCheck_KBuildDir) </li>
-      <li> Needs to run with Kernel Makefile and copy of compiled vmlinux. </li>
-      <li> *		Should we include a Kernel Makefile? </li>
-      <li> *		Specify vmlinux via option/cmdline?  Running copy and/or rpmbuild based? </li>
+      
+  <li> Needs to run with Kernel Makefile and copy of compiled vmlinux. </li>
+      <ul>
+        <li> 		Should we include a Kernel Makefile? </li>
+        <li> 		Specify vmlinux via option/cmdline?  Running copy and/or rpmbuild based? </li>
+      </ul>
 
   <li>	[IN PROGRESS] Split into functions/vars/configs etc. </li>
 
@@ -34,12 +37,16 @@ KISSChecker will run various static analyser checks on the Linux kernel, as per 
 <li> Add -a option to tee command as command line option? </li>
 
 <li>	Include cecho as library for fancy output. </li>
-<li> *  	Use colorized output from cecho. </li>
+<ul>
+  <li>   	Use colorized output from cecho. </li>
+</ul>
 
 <li> 	[PENDING] Configure where log files will be stored. </li>
 
 <li>	Should we grep for certain major flaws that could be exposed by the logfiles? </li>
-<li> *		e.g. instead of scanning for x, tool can do it for us.	</li>
+<ul>
+  <li> 		e.g. instead of scanning for x, tool can do it for us.	</li>
+</ul>
     </ul>
   </details>
 </div>
