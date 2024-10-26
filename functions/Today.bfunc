@@ -1,4 +1,4 @@
-DateUtil() {
+function Today() {
 ## Date Utility ##
 now=$(date +"%Y%m%d")
 echo "Today is $now"
