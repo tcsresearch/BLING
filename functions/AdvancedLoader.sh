@@ -16,10 +16,10 @@ function AdvancedLoader() {
     if [ $? -eq 0 ] 
     then 
       echo "Successfully Loaded Function: $file." 
-    break 0 
+    break  
     else 
       echo "ERROR: Could not load function: $file! " >&2 
-    break 1 
+    break  
     fi
   done  
 }
