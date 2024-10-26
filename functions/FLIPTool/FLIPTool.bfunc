@@ -63,21 +63,11 @@ rpm -qa --queryformat '%10{size} - %-25{name} \t %{version} \t %{os} \n' | sort 
 FLIP-All Version 2
 ###########################################################################################
 function flip-all-v2() {
-## TODO: Fix queryformartargs - not working
+# TODO: Add Sanity Check.
+### Source Our Config.
+source FLIPTool.conf
 
-corecmd="rpm -qa"
-queryformatargs=" --queryformat '%10{size} - %-25{name} \t %{version}\n' "
-queryformatargs2=" '%10{size} - %-25{name} \t %{version}\n' "
-queryformatargs3=" '%10{size} - %-25{name} \t' "
-
-# The queryformatargs are broken down individually here:
-querysize=" %10{size} "
-queryname=" %-25{name} "
-queryversion=" %{version} "
-
-sortargs=" -rh " # initial options: -n / -rh
-
-### $corecmd $queryformatargs | sort $sortargs
+## $corecmd $queryformatargs | sort $sortargs
 
 ### FIXME: The following line fails to display the package size (displays as 0):
 # $corecmd --queryformat '%10{size} - %-25{name} \t %{version}\n' | sort $sortargs
