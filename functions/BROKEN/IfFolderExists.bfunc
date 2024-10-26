@@ -3,7 +3,8 @@
 
 ### Specify a SINGLE foldername
 
-foldername='/path/to/folder'
+# foldername='/path/to/folder'
+foldername="$1"
 
 if [ -d $foldername ]; then
     echo 'The folder exists.'
@@ -18,7 +19,8 @@ fi
 ### Specify MULTIPLE folder names
 # TODO: Create a folder list and modify to use it.
 #
-foldernames=('/path/to/folder1' '/path/to/folder2' '/path/to/folder3')
+# foldernames=('/path/to/folder1' '/path/to/folder2' '/path/to/folder3')
+foldernames="$@"
 
 for foldername in ${foldernames[@]}; do
     if [ -d $foldername ]; then
