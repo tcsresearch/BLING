@@ -1,0 +1,16 @@
+## Changes in 0.1.3.3
+# Continue split into functions, config, etc. files.
+#
+## Changes in 0.1.3.2
+#	Fixed typo in TestList_Most
+#	Introduced Selected_TestList Config Option
+#	Introduce DisplayBanner Parameters.
+#	Begin Split Into Functions
+#	Introduce more sanity checks (SanityCheck_MakeFileExists and SanityCheck_IsKernelMakefile)
+#
+## Changes in 0.1.3.1
+#	Updated TODO
+#	Changed TestList to TestList_Main
+#
+## Changes in 0.1.3
+#	Updated TestList variables for future functionality
