@@ -1,0 +1,58 @@
+##########################################################################################
+FLIPTool.bfunc
+  This is the new master function which incorporates all existing test code functions.
+##########################################################################################
+
+#########################################################################################
+# TODO: Fix All Bugs
+#       Use CASE to provide options such as --noversiondisplay, --top10,  and --all
+###########################################################################################
+
+# TODO: Update code from fedora
+function FLIPTool() {
+rpm -qa --queryformat %10{size}
+}
+
+function flip-all() {
+  echo "FLIPTool - Find Largest Installed Packages (FLIP) Tool"
+  echo "Listing Type: "Show All"
+  echo "Version Display: Yes"
+  rpm -qa --queryformat '%10{size} - %-25{name} \t %{version}\n' | sort -n
+}
+
+############################################################################################
+FLIP Top 10
+############################################################################################
+function flip-top10() {
+  echo "FLIPTool - Find Largest Installed Packages (FLIP) Tool"
+  echo "Listing Type: Top 10"
+  echo "Version Display: Yes"
+  echo "Top 10 Largest Installed Packages:"
+  echo "All sizes are shown in megabytes (MB)."
+
+  rpm -qa --queryformat '%10{size} - %-25{name} \t %{version} \t %{os} \n' | sort -rh | head -25 | awk '{print $1/1024/1024, $2, $3, $4}'
+}
+
+function flip-top10-noversiondisplay() {
+  echo "FLIPTool - Find Largest Installed Packages (FLIP) Tool"
+  echo "Listing Type: Top 10"
+  echo "Version Display: No"
+  echo "Top 10 Largest Installed Packages:"
+  echo "All sizes are shown in megabytes (MB)."
+
+  rpm -qa --queryformat '%10{size} - %-25{name} \t  %{os} \n' | sort -rh | head -25 | awk '{print $1/1024/1024, $2, $3}'
+}
+
+############################################################################################
+New Functions October 2024
+############################################################################################
+function fliptool3() {
+TODO: Reverse display order so largest packages are shown first.
+dnf repoquery -C --installed --qf "%{size} %{name}" | sort -n | numfmt --to=iec --format="%.2f"
+}
+
+function fliptool4() {
+## TODO: Fix display to be in MB and remove version numbers.
+rpm -qa --queryformat '%10{size} - %-25{name} \t %{version} \t %{os} \n' | sort -rh | head -25 | awk '{print $1/1024/1024, $2, $3, $4}'
+}
+
