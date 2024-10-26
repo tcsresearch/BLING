@@ -11,10 +11,15 @@
 # Version     : LFS 7.0
 #
 ########################################################################
+
 function SysV-rc() {
+
+function SysV-LoadInitFunctions() {
 # Source our init functions
 ## FIXME: Change to the correct filename!
-. /lib/lsb/init-functions
+   # . /lib/lsb/init-functions
+   source SysV_init-functions
+}
 
 print_error_msg()
 {
