@@ -14,7 +14,6 @@ Misc. Scripts We Use - will become plugins for BLING
 <div id="initial-projects">
 <b><u>Initial Projects</u></b><br>
 <ul>
-<li> [WIP] KConfigTool:               Get and save running kernel config.             </li>
 <li> [WIP] RPMFusion-Installer:       Tools to install RPM Fusion.                    </li>
 <li> [WIP] 45Drives-setup:            Install tools from 45Drives.                    </li>
 <!-- <li> [WIP] FLIPTool:                  Find Largest Installed Packages (FLIP) Tool.    </li> -->
