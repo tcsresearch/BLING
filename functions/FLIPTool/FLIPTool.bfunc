@@ -6,6 +6,9 @@ FLIPTool.bfunc
 #########################################################################################
 # TODO: Fix All Bugs
 #       Use CASE to provide options such as --noversiondisplay, --top10,  and --all
+#       Integrate Cecho/BLING.
+#       Create config files to store variables.
+#       Use local functions? They are isolated within the function.
 ###########################################################################################
 
 # TODO: Update code from fedora
@@ -56,3 +59,48 @@ function fliptool4() {
 rpm -qa --queryformat '%10{size} - %-25{name} \t %{version} \t %{os} \n' | sort -rh | head -25 | awk '{print $1/1024/1024, $2, $3, $4}'
 }
 
+###########################################################################################
+FLIP-All Version 2
+###########################################################################################
+function flip-all-v2() {
+## TODO: Fix queryformartargs - not working
+
+corecmd="rpm -qa"
+queryformatargs=" --queryformat '%10{size} - %-25{name} \t %{version}\n' "
+queryformatargs2=" '%10{size} - %-25{name} \t %{version}\n' "
+queryformatargs3=" '%10{size} - %-25{name} \t' "
+
+# The queryformatargs are broken down individually here:
+querysize=" %10{size} "
+queryname=" %-25{name} "
+queryversion=" %{version} "
+
+sortargs=" -rh " # initial options: -n / -rh
+
+### $corecmd $queryformatargs | sort $sortargs
+
+### FIXME: The following line fails to display the package size (displays as 0):
+# $corecmd --queryformat '%10{size} - %-25{name} \t %{version}\n' | sort $sortargs
+
+### Test
+$corecmd --queryformat '%10{size} - %-25{name} \t %{version}\n'  | sort $sortargs
+
+### rpm -qa --queryformat '%10{size} - %-25{name} \t %{version}\n' | sort -n
+### rpm -qa --queryformat '%10{size} - %-25{name} \t %{version}\n' | sort -rh
+}
+
+############################################################################################
+FLIP-Top10 Version 2
+############################################################################################
+function flip-top10-v2() {
+# TODO: Use variables.
+echo "Top 10 Largest Installed Packages:"
+echo "All sizes are shown in megabytes (MB)."
+###
+### Define Variables ###
+MainCMD="rpm -qa"
+SortArgs="-rh"
+HeadArgs="-25"
+#
+rpm -qa --queryformat '%10{size} - %-25{name} \t %{version} \t %{os} \n' | sort -rh | head -25 | awk '{print $1/1024/1024, $2, $3, $4}'
+}
