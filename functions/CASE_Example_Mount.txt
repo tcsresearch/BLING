@@ -1,0 +1,27 @@
+#/bin/bash
+case "$1" in
+  "-mount")
+    mount /path/to/device /path/to/mountpoint
+    ;;
+  "-unmount")
+    umount /path/to/mountpoint
+    ;;
+  "-remount")
+    "$0" -unmount
+    "$0" -mount
+    ;;
+  *) ## This is the default when no parameters are specified.
+    echo "You have failed to specify what to do correctly."
+    echo "Usage: "
+    echo " -mount: Mount a drive or folder."
+    echo "         -mount /path/to/device /path/to/mountpoint"
+    echo " "
+    echo " -unmount: Unmount a file or folder."
+    echo "         -unmount /path/to/device /path/to/mountpoint"
+    echo " "
+    echo " -remount: Remount a file or folder (unmount/remount)."
+    echo "         -remount /path/to/device /path/to/mountpoint"
+    echo " "
+    exit 1
+    ;;
+esac
