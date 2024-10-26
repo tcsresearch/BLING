@@ -45,7 +45,7 @@ BLING is a BASH library.  It contains a collection of functions useful for BASH 
       <b>Updates 10/2024</b>
     </summary>
       <ul>
-        <li> Add new functions: fliptool3, fliptool4, displayline, KTool. </li>
+        <li> Add new functions: fliptool3, fliptool4, displayline, Pause, &  KTool. </li>
       </ul>
   </details>
 </div>
