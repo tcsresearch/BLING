@@ -1,4 +1,4 @@
 # TODO: Update code from fedora
-FLIPTool() {
+function FLIPTool() {
 rpm -qa --queryformat %10{size}
 }

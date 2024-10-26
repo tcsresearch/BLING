@@ -1,2 +1,4 @@
-# This will pause until a button is pressed.
-read -p "Press [Enter] to continue..."
+function Pause() {
+  # This will pause until a button is pressed.
+  read -p "Press [Enter] to continue..."
+}
