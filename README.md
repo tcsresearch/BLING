@@ -26,6 +26,12 @@ BLING is a BASH library.  It contains a collection of functions useful for BASH 
     <li> :x: [DEPRECATED] Ensure that move of built libraries to /lib works as expected. :x: </li>
 </div>
 <hr>
+<div id="Updates_10-2024">
+  <b>Updates 10/2024</b>
+    <li> Add new functions: fliptool3, fliptool4, displayline. </li>
+</div>
+ <hr>
+<hr>
 <div id="Updates_04-2024">
   <b>Updates 04/2024</b>
     <li> Add new function duls. </li>
