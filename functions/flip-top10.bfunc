@@ -1,4 +1,4 @@
-flip-top10() {
+function flip-top10() {
   echo "FLIPTool - Find Largest Installed Packages (FLIP) Tool"
   echo "Listing Type: Top 10"
   echo "Version Display: Yes"
