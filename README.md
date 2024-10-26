@@ -40,6 +40,8 @@
     <ul>
       <li> :heavy_check_mark: [TESTABLE] Finish implementing ColorLib a.k.a. Cecho. :heavy_check_mark: </li>
       <li> :heavy_check_mark:  [TESTABLE] Rename all functions to use .bfunc extension. :heavy_check_mark: </li>
+      <li> :ballot_box_with_check:  [IN PROGRESS] Create Config Loader.  :ballot_box_with_check: </li> 
+      <li> :ballot_box_with_check:  [IN PROGRESS] Create Function Loader.  :ballot_box_with_check: </li> 
       <li> :ballot_box_with_check:  [IN PROGRESS] Add a plethora of useful functions.  :ballot_box_with_check: </li> 
       <li> :ballot_box_with_check:     [IN PROGRESS] Test all functions. </li> 
       <li> :ballot_box_with_check: [PLANNED] Use -v for verbose as argument for each function; use -q for quiet. :ballot_box_with_check: </li>
