@@ -43,5 +43,7 @@ Misc. Scripts We Use - will become plugins for BLING
 <hr>
 <div id="future">
 <b><u>Possible Future Supported Distros</u></b><br>
+ <ul>
 We will plan on supporting other Linux distros in the future, such as CentOS and its successors, RHEL, elrepo, Debian, and Ubuntu.  
+ </ul>
 </div>
