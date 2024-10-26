@@ -1,0 +1,20 @@
+### TODO:###
+#	Stop Program if not in built Kernel directory (SanityCheck_KBuildDir)
+
+#	Needs to run with Kernel Makefile and copy of compiled vmlinux.
+#		Should we include a Kernel Makefile?
+#		Specify vmlinux via option/cmdline?  Running copy and/or rpmbuild based?
+
+#	[IN PROGRESS] Split into functions/vars/configs etc.
+
+#	Add Log By Date Capability (via $Today in BLING)
+
+#	Add -a option to tee command as command line option?
+
+#	Include cecho as library for fancy output.
+#  	Use colorized output from cecho.
+
+#	[PENDING] Configure where log files will be stored.
+
+#	Should we grep for certain major flaws that could be exposed by the logfiles?
+#		e.g. instead of scanning for x, tool can do it for us.	
