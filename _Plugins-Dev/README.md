@@ -1,15 +1,25 @@
 # BLING-Plugins (formerly tcs-scripts)
-Misc. Scripts We Use - will become plugins for BLING
+<hr>
 
-<div id="Warning">
-<b>WARNING!  Highly experimental Projects Here!  Use At Your Own Risk.</b><br>
+> [!NOTE]
+> Plugins for BLING.
+<hr>
+
+> [!WARNING]
+> This code is highly experiemental and has NOT been fully implemented or tested yet.
+> <b> Use At Your Own Risk! </b><br>
  <ul>
  <li> At this time, we are slowly building our library of scripts - all of which should be   
  considered experimental until further notice. </li>
  <li> They may work, or break your system, so we cannot take responsibility for recklessly running code without checking it first! </li>
  <li> The scripts will, over time, provide added benefits to Fedora users, and are listed here. </li>
  </ul>
-</div>
+<hr>
+
+> [!IMPORTANT]
+> Code is not considered stable yet, and still lacks most features.
+
+
 <hr>
 <div id="initial-projects">
 <b><u>Initial Projects</u></b><br>
