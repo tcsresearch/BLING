@@ -37,6 +37,7 @@ BLING is a BASH library.  It contains a collection of functions useful for BASH 
     </ul>
   </details>
 </div>
+
 <hr>
 <div id="Updates_10-2024">
   <details>
@@ -48,7 +49,7 @@ BLING is a BASH library.  It contains a collection of functions useful for BASH 
       </ul>
   </details>
 </div>
- <hr>
+
 <hr>
 <div id="Updates_04-2024">
   <details>
@@ -60,7 +61,7 @@ BLING is a BASH library.  It contains a collection of functions useful for BASH 
       </ul>
   </details>
 </div>
- <hr>
+
 <hr>
 <div id="Updates_03-2024">
   <details>
@@ -72,7 +73,7 @@ BLING is a BASH library.  It contains a collection of functions useful for BASH 
       </ul>
   </details>
 </div>
- <hr>
+
 <hr>
 <div id="Updates_01-2023">
   <details>
@@ -86,6 +87,7 @@ BLING is a BASH library.  It contains a collection of functions useful for BASH 
       </ul>
   </details>
  </div>
+ 
  <hr>
 <div id="Updates_05-2023">
   <details>
