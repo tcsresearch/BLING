@@ -3,7 +3,8 @@
 
 ### Specify a SINGLE filename
 
-filename='/path/to/file'
+#filename='/path/to/file'
+filename="$1"
 
 if [ -f $filename ]; then
     echo 'The file exists.'
@@ -18,7 +19,8 @@ fi
 ### Specify MULTIPLE file names
 # TODO: Create a file list and modify to accomidate
 #
-filenames=('/path/to/file1' '/path/to/file2' '/path/to/file3')
+# filenames=('/path/to/file1' '/path/to/file2' '/path/to/file3')
+filenames="$@" 
 
 for filename in ${filenames[@]}; do
     if [ -f $filename ]; then
