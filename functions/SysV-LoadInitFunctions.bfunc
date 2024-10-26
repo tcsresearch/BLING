@@ -1,0 +1,6 @@
+function SysV-LoadInitFunctions() {
+# Source our init functions
+## FIXME: Change to the correct filename!
+   # . /lib/lsb/init-functions
+   source SysV_init-functions.bfunc
+}
