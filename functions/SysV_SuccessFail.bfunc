@@ -1,4 +1,4 @@
-function SuccessFail() {
+function SysV_SuccessFail() {
 ## Set color commands, used via echo
 # Please consult `man console_codes for more information
 # under the "ECMA-48 Set Graphics Rendition" section
