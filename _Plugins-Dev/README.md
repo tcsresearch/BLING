@@ -3,9 +3,12 @@ Misc. Scripts We Use - will become plugins for BLING
 
 <div id="Warning">
 <b>WARNING!  Highly experimental Projects Here!  Use At Your Own Risk.</b><br>
-At this time, we are slowly building our library of scripts - all of which should be considered experimental until further notice.
-They may work, or break your system, so we cannot take responsibility for recklessly running code without checking it first!
-The scripts will, over time, provide added benefits to Fedora users, and are listed here.
+ <ul>
+ <li> At this time, we are slowly building our library of scripts - all of which should be   
+ considered experimental until further notice. </li>
+ <li> They may work, or break your system, so we cannot take responsibility for recklessly running code without checking it first! </li>
+ <li> The scripts will, over time, provide added benefits to Fedora users, and are listed here. </li>
+ </ul>
 </div>
 <hr>
 <div id="initial-projects">
