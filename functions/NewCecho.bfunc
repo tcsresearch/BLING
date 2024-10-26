@@ -1,6 +1,6 @@
 #/bin/bash
 
-cecho() {
+function cecho() {
         local code="\033["
         case "$1" in
                 black  | bk) color="${code}0;30m";;
