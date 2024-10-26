@@ -1,4 +1,4 @@
-KTool - Kernel Tool
+[ DEPRICATED ] KTool - Kernel Tool (Now part of BLING)
 <hr>
 This will provide several handy tools for working with the Linux Kernel.
 <p>
