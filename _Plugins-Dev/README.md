@@ -17,7 +17,7 @@ Misc. Scripts We Use - will become plugins for BLING
 <li> [WIP] KConfigTool:               Get and save running kernel config.             </li>
 <li> [WIP] RPMFusion-Installer:       Tools to install RPM Fusion.                    </li>
 <li> [WIP] 45Drives-setup:            Install tools from 45Drives.                    </li>
-<li> [WIP] FLIPTool:                  Find Largest Installed Packages (FLIP) Tool.    </li>
+<!-- <li> [WIP] FLIPTool:                  Find Largest Installed Packages (FLIP) Tool.    </li> -->
 <li> [WIP] add-fcontext:              SeLinux context Utility.                        </li>
 <li> [WIP] RootCheckr:                Checks for root.                                </li>
 <ul>
