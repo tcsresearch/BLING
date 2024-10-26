@@ -10,7 +10,7 @@ function SaveKernelRuinningConfig() {
   echo "Kernel Config Saved."
 }
 
-function GetCurrentRunningKernelVersion() {
+function GetKernelVersion() {
   KernelVersion=`uname -r`
   echo "Kernel Version Is: $KernelVersion."
   }
