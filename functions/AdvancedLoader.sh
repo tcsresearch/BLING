@@ -1,3 +1,5 @@
+# typically you would break from loops and return from functions.
+
 function AdvancedLoader() {
 ### FIXME: Running script causes logout with or without a parameter.
 # If no parameters are specified, show help screen.
@@ -14,10 +16,10 @@ function AdvancedLoader() {
     if [ $? -eq 0 ] 
     then 
       echo "Successfully Loaded Function: $file." 
-    exit 0 
+    break 0 
     else 
       echo "ERROR: Could not load function: $file! " >&2 
-    exit 1 
+    break 1 
     fi
   done  
 }
