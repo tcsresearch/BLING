@@ -1,4 +1,5 @@
 function AdvancedLoader() {
+### FIXME: Running script causes logout with or without a parameter.
 # If no parameters are specified, show help screen.
 if [ -z "$1" ]; then
   echo "Usage: $0 <filename>"
