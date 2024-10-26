@@ -1,0 +1,56 @@
+function DisplayBanner() {
+echo "Kernel Indepth Static Sanity (KISS) Checker Tool"
+echo "Version $Version.  Developed by TCS Research."
+echo "Release Date: $ReleaseDate"
+echo " "
+echo "Selected TestList Name: $Selected_TestList"
+echo "Tests To Run: ???  "
+echo " "
+# TODO: Align output.
+}
+
+function SanityCheck_LogDirExists() {
+## FIXME: Program fails when testlogs folder and files not present; introduce sanity check.
+#		if statement not working, does not create $LogDir.
+#		Have the sanity check root and use sudo if needed (will require chown/chmod as new folder will be root only).
+#
+if [ ! -d ${LogDir} ]
+then
+    mkdir -p ${LogDir}
+fi
+
+#
+# Temp Fix For if Statement
+## mkdir -p testlogs
+
+}
+
+function SanityCheck_MakeFileExists () {
+	# TODO: Modify sanity check to ensure it is a Kernel Makefile.
+	if [ ! -f Makefile ]
+	then
+		echo "ERROR: Kernel Makefile not found...quitting."
+		exit 2
+	fi
+
+}
+
+function SanityCheck_IsKernelMakefile() {
+	#  Here we use grep to read Makefile and ensure it belongs to the Linux Kernel.
+	## INFO: We cannot have an empty function - even if it isn't called.  Script refuses to run.
+	echo " "	# Fixes refusal to run on empty function.
+}
+
+
+function Main_Program() {
+### --- Main Program --- ###
+# FIXME: $Selected_TestList NOT WORKING.
+# for TestName in $Selected_TestList
+for TestName in $TestList_Most
+do
+	echo Running Static Analyzer Test $TestName... 
+	make $TestName > $LogDir/$TestName.log
+	echo $TestName Completed.  See $LogDir/$TestName.log For Results.
+done
+}
+
