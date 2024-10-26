@@ -4,7 +4,7 @@ function AdvancedLoader() {
 if [ -z "$1" ]; then
   echo "Usage: $0 <filename>"
   echo "Where <filename> is the name of the list you wish to load."
-  exit 1
+  # exit 1 # Could be cause of logout.
 fi
 
   # Assuming 'files.list' contains a list of filenames, one per line
