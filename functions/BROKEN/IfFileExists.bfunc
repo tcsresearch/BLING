@@ -7,9 +7,9 @@ function IfFileExists() {
     filename="$1"
 
     if [ -f $filename ]; then
-        echo 'The file $filename exists.'
+        echo 'The file $1 exists.'
     else
-        echo 'The file $filename does not exist.'
+        echo 'The file $1 does not exist.'
     fi
 
     # Output:
