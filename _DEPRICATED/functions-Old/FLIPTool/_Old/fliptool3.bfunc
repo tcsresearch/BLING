@@ -1,0 +1,4 @@
+function fliptool3() {
+TODO: Reverse display order so largest packages are shown first.
+dnf repoquery -C --installed --qf "%{size} %{name}" | sort -n | numfmt --to=iec --format="%.2f"
+}

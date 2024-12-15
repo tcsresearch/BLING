@@ -7,22 +7,14 @@ function IfFileExists() {
     filename="$1"
 
     if [ -f $filename ]; then
-        echo 'The file $filename exists.'
+        echo 'The file $1 exists.'
     else
-        echo 'The file ${filename} does not exist.'
+        echo 'The file $1 does not exist.'
     fi
 
     # Output:
     # 'The file exists.' if the file is present
     # 'The file does not exist.' if the file is not present
-
-##### FIXME: Display shows $1 not the actual file.
-
-# if not enough args displayed, display an error and die
-[ $# -eq 0 ] && echo "Usage: $0 filename" 
-
-
-
 }
 
 
@@ -47,3 +39,4 @@ function IfFilesExist() {
     # '/path/to/file2 does not exist.' if file2 is not present
     # '/path/to/file3 exists.' if file3 is present
 }
+

@@ -1,0 +1,4 @@
+function fliptool4() {
+## TODO: Fix display to be in MB and remove version numbers.
+rpm -qa --queryformat '%10{size} - %-25{name} \t %{version} \t %{os} \n' | sort -rh | head -25 | awk '{print $1/1024/1024, $2, $3, $4}'
+}

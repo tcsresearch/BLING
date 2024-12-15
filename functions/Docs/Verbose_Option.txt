@@ -1,0 +1,45 @@
+#!/bin/bash
+
+verbose=false
+
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        -v|--verbose)
+            verbose=true
+            shift
+            ;;
+        *)
+            echo "Unknown option: $1" >&2
+            exit 1
+            ;;
+    esac
+done
+
+if $verbose; then
+    echo "Verbose mode is on."
+fi
+
+# Rest of your script
+
+########################################################################################
+
+Explanation:
+
+    verbose variable: We initialize a verbose variable to false.
+    while loop: We loop through the command-line arguments using a while loop.
+    case statement: We use a case statement to match the arguments.
+        -v or --verbose: If the argument matches -v or --verbose, we set the verbose variable to true.
+        *): If the argument doesn't match any of the defined cases, we print an error message and exit the script. 
+    shift command: The shift command is used to remove the processed argument from the list of arguments.
+    if statement: We use an if statement to check if the verbose variable is true. If it is, we print a message indicating that verbose mode is on. 
+
+#############################################################################################
+How to use the script:
+Code
+
+./script.sh -v # Verbose mode on
+./script.sh --verbose # Verbose mode on
+./script.sh # Verbose mode off
+
+Generative AI is experimental.
+

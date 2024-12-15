@@ -1,0 +1,12 @@
+
+## Use $1 to sepcify commandline parameter.
+function SourceIfExists() {
+	echo "Loading $1..."
+	# Load function if it exists
+	if [ -f $1 ]; then
+    		. $1
+	fi
+
+echo "Sourced $1 Successfully."
+}
+

@@ -1,0 +1,21 @@
+function GetRunningKernelConfig() {
+  cat /lib/modules/$(uname -r)/build/.config
+}
+
+function SaveKernelRuinningConfig() {
+# TODO: Enable Cecho.
+  KernelVersion=`uname -r`
+  echo "Kernel Version Is: $KernelVersion."
+  cat /lib/modules/$(uname -r)/build/.config > kernel.config
+  echo "Kernel Config Saved."
+}
+
+function GetCurrentRunningKernelVersion() {
+  KernelVersion=`uname -r`
+  echo "Kernel Version Is: $KernelVersion."
+  }
+  
+function IsKernelConfigFile() {
+# This will read the kernel config file specified and check if it is a legit kernel config file.
+  echo " " # Empty functions error fix until code can be added here.
+}

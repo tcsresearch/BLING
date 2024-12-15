@@ -1,13 +1,29 @@
-function DisplayLine() {
-        cecho blue "__________________________________________________________________"
-}
-
 function ShowEmptyLine() {
         echo " "
 }
 
-function DisplayLine2() {
-        echo " "
-        cecho blue "__________________________________________________________________"
-        echo " "
+
+
+### TODO: Enable CASE feature to select the graphics used, such as # - or =
+#	use $3 ?  
+# 	hash="#"
+#	dash="-"
+#	equal="=" # Will this work?
+#
+# could also just directly specify character as $3.
+# Be sure to use a default case that displays usage
+
+
+function DisplayLine_Hash() {
+        cecho $1 " ########## $2 ########## "
 }
+
+function DisplayLine_Bar() {
+        cecho $1 " ---------- $2 ---------- "
+}
+
+function DisplayLine_Equals() {
+	cecho $1 " ========== $2 ========== "
+}
+
+

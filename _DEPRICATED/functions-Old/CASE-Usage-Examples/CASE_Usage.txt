@@ -1,0 +1,13 @@
+case expression in
+  pattern1)
+    command1
+    command2
+    ;;
+  pattern2)
+    command3
+    command4
+    ;;
+  *)
+    default_command
+    ;;
+esac
