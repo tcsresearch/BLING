@@ -53,6 +53,20 @@
 </div>
 
 <hr>
+<div id="Updates_12-2024">
+  <details>
+    <summary>
+      <b>Updates 12/2024</b>
+    </summary>
+      <ul>
+        <li> Enhance DisplayLine Function. </li>
+        <li> Move a few functions into production from TESTING. </li>
+        <li> Partial development and enhancement of some functions, including IfFileExists, AdvancedLoader, and SourceIfFileExists. </li>
+      </ul>
+  </details>
+</div>
+
+<hr>
 <div id="Updates_10-2024">
   <details>
     <summary>
