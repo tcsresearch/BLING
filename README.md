@@ -52,6 +52,24 @@
   </details>
 </div>
 
+
+<hr>
+<div id="Updates_01-2025">
+  <details>
+    <summary>
+      <b>Updates 01/2025</b>
+    </summary>
+      <ul>
+        <li> Add CheckCommand function (UNTESTED!). </li>
+        <li> Rename NewCecho.bfunc to Cecho.bfunc. </li>
+      </ul>
+  </details>
+</div>
+
+
+
+
+
 <hr>
 <div id="Updates_12-2024">
   <details>
