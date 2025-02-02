@@ -7,7 +7,7 @@
 <hr>
 
 > [!WARNING]
-> This code is highly experiemental and has NOT been fully implemented or tested yet.
+> This code is highly experiemental and has NOT been fully implemented or tested.
 <hr>
 
 > [!IMPORTANT]
