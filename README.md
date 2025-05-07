@@ -64,6 +64,7 @@
         <li> Add CenterEcho.bfunc (UNTESTED!} </li>
         <li> Add NewEchoBox.bfunc (UNTESTED!). </li>
         <li> Rename function banner to ColorBanner in ColorBanner.bfunc. </li>
+        <li> Improved Dialog for Pause function. </li>
         </ul>
   </details>
 </div>
