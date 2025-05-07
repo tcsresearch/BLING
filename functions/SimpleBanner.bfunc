@@ -1,0 +1,9 @@
+Taken From: https://unix.stackexchange.com/questions/70615/bash-script-echo-output-in-box
+
+SimpleBanner() {
+    msg="# $* #"
+    edge=$(echo "$msg" | sed 's/./#/g')
+    echo "$edge"
+    echo "$msg"
+    echo "$edge"
+}
