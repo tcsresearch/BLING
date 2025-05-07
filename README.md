@@ -54,6 +54,22 @@
 
 
 <hr>
+<div id="Updates_05-2025">
+  <details>
+    <summary>
+      <b>Updates 05/2025</b>
+    </summary>
+      <ul>
+        <li> Add SimpleBanner function (UNTESTED!). </li>
+        <li> Add CenterEcho.bfunc (UNTESTED!} </li>
+        <li> Add NewEchoBox.bfunc (UNTESTED!). </li>
+        <li> Rename function banner to ColorBanner in ColorBanner.bfunc. </li>
+        </ul>
+  </details>
+</div>
+
+
+<hr>
 <div id="Updates_01-2025">
   <details>
     <summary>
