@@ -1,0 +1,13 @@
+Taken From: https://unix.stackexchange.com/questions/70615/bash-script-echo-output-in-box
+
+
+# When you want to center text that is not in a box, you can simply use
+
+CenterEcho() {
+  COLS=$(tput cols)  # use the current width of the terminal.
+  printf "%*s\n" "$(((${#1}+${COLS})/2))" "$1"
+}
+
+# And use that to center a single line of text.
+
+# CenterEcho 'Love Unix & Linux'
