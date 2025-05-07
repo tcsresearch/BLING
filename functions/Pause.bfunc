@@ -1,4 +1,9 @@
-function Pause() {
+function Pause_Old () {
   # This will pause until a button is pressed.
   read -p "Press [Enter] to continue..."
+}
+
+function Pause () {
+  # This will pause until a button is pressed.
+  read -p "Press Any Key To Continue or CTRL + C To Cancel."
 }
