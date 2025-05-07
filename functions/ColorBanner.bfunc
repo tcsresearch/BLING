@@ -1,13 +1,13 @@
 # Taken From: https://unix.stackexchange.com/questions/70615/bash-script-echo-output-in-box
-# USAGE: Multi line banners are generated like `banner ${COLOR} ${OPTIONAL_SECONDCOLOR} "first line" "second line" "third line"`
+# USAGE: Multi line banners are generated like `ColorBanner ${COLOR} ${OPTIONAL_SECONDCOLOR} "first line" "second line" "third line"`
 
 # MORE USAGE: 
-# banner ${LIGHT_PURPLE} "test here something line 1. SUPER LONG AND IT REALLY NEEDS TO BE LONG" "super duper long line 2" # Single Color option
-# banner ${LIGHT_PURPLE} ${RED} " This should be red now test here something line 1. SUPER LONG AND IT REALLY NEEDS TO BE LONG" "super duper long line 2" #Two Color Option
+# ColorBanner ${LIGHT_PURPLE} "test here something line 1. SUPER LONG AND IT REALLY NEEDS TO BE LONG" "super duper long line 2" # Single Color option
+# ColorBanner ${LIGHT_PURPLE} ${RED} " This should be red now test here something line 1. SUPER LONG AND IT REALLY NEEDS TO BE LONG" "super duper long line 2" #Two Color Option
 
 # TODO: Add Usage Function.
 #
-function banner() {
+function ColorBanner() {
     local s=("${@:3}") b w
     local second_color=$2
     if [[ ! "$second_color" =~ "\e[".* ]]; then #If the second color isn't declared, then make the function use only the first color declared
