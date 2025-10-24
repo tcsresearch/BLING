@@ -1,0 +1,3 @@
+function ListRepos() {
+        dnf5 repo list --enabled | awk 'NR>1 {print $1}'
+}
