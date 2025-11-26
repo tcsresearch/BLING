@@ -52,6 +52,19 @@
   </details>
 </div>
 
+<hr>
+<div id="Updates_11-2025">
+  <details>
+    <summary>
+      <b>Updates 11/2025</b>
+    </summary>
+      <ul>
+        <li> Add BLINGDev_CheckFiles function (UNTESTED!). </li>
+        <li> - Assists with generating a RunMain.sh script after parsing functions files.</li>
+        </ul>
+  </details>
+</div>
+
 
 <hr>
 <div id="Updates_05-2025">
