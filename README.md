@@ -61,6 +61,7 @@
       <ul>
         <li> Add BLINGDev_CheckFiles function (UNTESTED!). </li>
         <li> - Assists with generating a RunMain.sh script after parsing functions files.</li>
+        <li> - Located in functions/Dev folder.</li>
         </ul>
   </details>
 </div>
