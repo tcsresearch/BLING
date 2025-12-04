@@ -54,13 +54,29 @@
 </div>
 
 <hr>
+<div id="Updates_12-2025">
+  <details>
+    <summary>
+      <b>Updates 12/2025</b>
+    </summary>
+      <ul>
+        <li>  Add BLINGDEV_LoaderUtil function (UNTESTED!). </li>
+        <li> - Assists with sourcing config files (*.conf) under config/ and functions files (*.bfunc) under functions/ .</li>
+        <li> - Located in functions/Dev folder.</li>
+        <li> - This should solve most organization-wide loading errors once tested and called by existing code.</li>
+        </ul>
+  </details>
+</div>
+
+
+<hr>
 <div id="Updates_11-2025">
   <details>
     <summary>
       <b>Updates 11/2025</b>
     </summary>
       <ul>
-        <li> Add BLINGDev_CheckFiles function (UNTESTED!). </li>
+        <li>  Add BLINGDev_CheckFiles function (UNTESTED!). </li>
         <li> - Assists with generating a RunMain.sh script after parsing functions files.</li>
         <li> - Located in functions/Dev folder.</li>
         </ul>
