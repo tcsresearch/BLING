@@ -1,0 +1,101 @@
+## Confirm Cecho is enabled. ##
+# TODO: Can we change the Error and exit lines to call the EnableCecho function instead? 
+#		We need to source Cecho when IsCechoEnabled returns as Not Installed.
+
+########################################
+## Setup Variables ##				  ##
+########################################
+
+CechoDirectory="/etc/BLING/functions"	 # Confirm proper directory.
+CechoFileName="Cecho.bfunc"  # Needs updating when AdvCecho is implemented - use CechoDirectory.
+Cecho_Alias_Status="Unknown" # Needs implementation.
+
+
+function IsCechoInstalled() {
+	if [ -f $CechoDirectory/$CechoFileName ]; then
+		IsCechoEnabled # Check if Cecho is sourced and executable.
+	else	
+		echo "ERROR: Cecho is NOT installed."
+		# exit 1 # this will  exit BASH or tmux shell - Confirmed.
+fi
+}
+
+function IsCechoEnabled() {
+	if [ -x "$(command -v cecho)" ]; then 	# Runs is Cecho command does NOT exist or is not executable.
+		echo "Cecho is Enabled."
+	else
+		echo 'Error: Cecho is not installed.' >&2
+  		# exit 1 # this will exit BASH or tmux shell - Confirmed. 
+	fi
+}
+
+## Enable Cecho if needed. ##
+function EnableCecho() {
+	if [ -x "$(command -v cecho)" ]; then
+		echo "Cecho Enabled."
+		echo " "
+	else
+		source $CechoDirectory/$CechoFileName
+	fi
+}
+
+###########################################################################################################
+### Cecho Alias Swap Functions ###																		###
+###########################################################################################################
+
+## TODO: Can we make CechoAlias a function with arguments for On and Off ?
+## 				e.g. Cecho_Alias on and Cecho_Alias off
+
+
+### Swap echo with cecho if enabled. ###
+function Cecho_AliasOn() {
+	alias echo="cecho"
+	echo "Cecho as replacement for echo is ENABLED."
+	echo "To disable, run 'Cecho_AliasOff'
+}
+
+### Revert back to normal echo operation without Cecho. ###
+function Cecho_AliasOff() {
+	alias echo="echo"
+	echo "Cecho as replacement for echo is DISABLED."
+	echo "To disable, run 'Cecho_AliasOn'
+}
+
+
+
+########## Cecho Alias Master Function - WIP !!! ##########
+function Cecho_Alias() {
+  local on=""
+  local off=""
+s() 
+
+# Parse named arguments
+  while [[ "$#" -gt 0 ]]; do
+    case "$1" in
+      --on)
+        on="$2"
+        shift 2
+        ;;
+      --off)
+        off="$2"
+        shift 2
+        ;;
+      --help)
+		echo "Cecho_Alias - Usage"
+		echo "Cecho_Alias --on will replace echo with cecho."
+		echo "Cecho_Alias --off will restore normal echo functionality."
+		echo " "
+		;;
+	  "default_action")
+        # Need to check status here.
+		type echo # Should confirm if echo is an alias set to cecho or not.
+		echo "ERROR: Need to specify On or Off."
+		# echo "Cecho Alias is $Cecho_Alias_Status."
+		;;
+		*)
+        echo "Unknown option: $1"
+        return 1
+        ;;
+    esac
+  done
+}

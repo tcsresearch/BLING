@@ -1,10 +1,9 @@
-<img src="https://github.com/tcsresearch/BLING/blob/main/BLING-Logo.png">
-<h3> BLING - Bash Library Implementation - Next Gen </h3>
-<h4> BLING is a BASH library. It contains a collection of functions useful for BASH scripts. </h4>
+
+<h4> BLING - Bash Library Implementation - Next Gen </h4>
 <hr>
 
 > [!NOTE]
-> BLING is still under active development.
+> BLING is a BASH library.  It contains a collection of functions useful for BASH scripts.
 <hr>
 
 > [!WARNING]
@@ -50,20 +49,6 @@
       <li> :x: [DEPRECATED] Test new BuildLib2.sh utility - Uses a separate functions file (BuildLib.func). :x: </li>
       <li> :x: [DEPRECATED] Ensure that move of built libraries to /lib works as expected. :x: </li>
     </ul>
-  </details>
-</div>
-
-<hr>
-<div id="Updates_11-2025">
-  <details>
-    <summary>
-      <b>Updates 11/2025</b>
-    </summary>
-      <ul>
-        <li> Add BLINGDev_CheckFiles function (UNTESTED!). </li>
-        <li> - Assists with generating a RunMain.sh script after parsing functions files.</li>
-        <li> - Located in functions/Dev folder.</li>
-        </ul>
   </details>
 </div>
 
