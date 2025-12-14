@@ -1,11 +1,17 @@
 # Rummage (RUnMainGEnerator) - Generates a RunMain.sh script from files in a folder.
 # This library will read scripts in a directory and save the functions to a list file (RunMain.sh) for use with BLINGDev-GenerateCase.
 
+# Simon_Sed - Simplifies sed usage.
+function Simon_Sed() {
+	echo "Not Implemented yet"
+}
+
+
 # This function will be superceded by a --displayonly or --test parameter using $1.
 function CheckFiles() {
 # This function simply calls the function selected here.
-# OPTIONS: CheckFiles_DisplayOnly | CheckFiles_SaveData
-	CheckFiles_SaveData
+# OPTIONS: FuncExtractor_DisplayOnly | FuncExtractor_SaveData
+	FuncExtractor_SaveData
 }
 
 function FuncExtractor_DisplayOnly() {
@@ -67,6 +73,8 @@ function PrepFunctionsList() {
 
 # Strip string 'function' from files.
 function PrepFunctionsList_StripFunction() {
+	# Define $Sed_String
+	Sed_String="function" # String for sed to remove.
 	echo "Preparing Functions List..."
 	echo "Stripping Unnecessary Content from File: [Function]"
 	# Below Line not used - Obsoleted.
@@ -80,6 +88,8 @@ function PrepFunctionsList_StripFunction() {
 # DO NOT USE ! Not Working Yet. 
 # Strip string '() {` from files.
 function PrepFunctionsList_StripBrackets() {
+		# Define $Sed_String
+		Sed_String="() {" # String for sed to remove.
         echo "Preparing Functions List..."
         echo "Stripping Unnecessary Content from File: [Brackets] "
         # Below Line not used - Obsoleted.
