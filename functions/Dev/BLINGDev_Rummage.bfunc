@@ -1,12 +1,6 @@
 # Rummage (RUnMainGEnerator) - Generates a RunMain.sh script from files in a folder.
 # This library will read scripts in a directory and save the functions to a list file (RunMain.sh) for use with BLINGDev-GenerateCase.
 
-# Simon_Sed - Simplifies sed usage.
-function Simon_Sed() {
-	echo "Not Implemented yet"
-}
-
-
 # This function will be superceded by a --displayonly or --test parameter using $1.
 function CheckFiles() {
 # This function simply calls the function selected here.
