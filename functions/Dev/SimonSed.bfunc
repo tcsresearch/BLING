@@ -4,7 +4,9 @@
 ## TODO:   Add function to strip a specified string $Sed_String.
 
 function Strip_String() {
-  echo " Not Implemented Yet."
+  # TODO: Sanity check to prevent empy string via if [ -z ] ?
+  Sed_String_To_Strip="$1"
+  sed 's/$Sed_String_To_Strip //g'
 }
 
 
