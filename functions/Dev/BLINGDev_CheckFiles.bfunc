@@ -1,3 +1,4 @@
+# Rummage (RUnMainGEnerator) - Generates a RunMain.sh script from files in a folder.
 # This library will read scripts in a directory and save the functions to a list file (RunMain.sh) for use with BLINGDev-GenerateCase.
 
 # This function will be superceded by a --displayonly or --test parameter using $1.
@@ -7,7 +8,7 @@ function CheckFiles() {
 	CheckFiles_SaveData
 }
 
-function CheckFiles_DisplayOnly() {
+function FuncExtractor_DisplayOnly() {
 	# Define the directory to search
 	DIRECTORY="." # Replace with your actual directory path
 
@@ -30,7 +31,7 @@ function CheckFiles_DisplayOnly() {
 	fi
 }
 
-function CheckFiles_SaveData() {
+function FuncExtractor_SaveData() {
         # Define the directory to search
         DIRECTORY="." # Replace with your actual directory path
 
@@ -57,14 +58,14 @@ function CheckFiles_SaveData() {
         fi
 }
 
-
+# Calls both strip functions in a single run.
 function PrepFunctionsList() {
         PrepFunctionsList_StripFunction
 	# DO NOT USE ! Not Working Yet. 
 	# PrepFunctionsList_StripBrackets
 }
 
-
+# Strip string 'function' from files.
 function PrepFunctionsList_StripFunction() {
 	echo "Preparing Functions List..."
 	echo "Stripping Unnecessary Content from File: [Function]"
@@ -77,6 +78,7 @@ function PrepFunctionsList_StripFunction() {
 }
 
 # DO NOT USE ! Not Working Yet. 
+# Strip string '() {` from files.
 function PrepFunctionsList_StripBrackets() {
         echo "Preparing Functions List..."
         echo "Stripping Unnecessary Content from File: [Brackets] "
@@ -88,6 +90,7 @@ function PrepFunctionsList_StripBrackets() {
         sed 's/() {//g' RunMain_Pre.sh > RunMain_Post.sh
 }        
 
+# Generate RunMain.sh
 function FileCopy() {
 echo "Copying RunMain_Post.sh as RunMain.sh..."
         cp -v RunMain_Post.sh RunMain.sh
@@ -95,6 +98,7 @@ echo "Copying RunMain_Post.sh as RunMain.sh..."
         chmod a+x RunMain.sh
 }
 
+# Remove temporary files.
 function CleanFiles() {
 	rm -i RunMain_Pre.sh
 	rm -i RunMain_Post.sh
