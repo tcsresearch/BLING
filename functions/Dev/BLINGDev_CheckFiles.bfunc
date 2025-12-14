@@ -1,5 +1,9 @@
+# This library will read scripts in a directory and save the functions to a list file (RunMain.sh) for use with BLINGDev-GenerateCase.
+
+# This function will be superceded by a --displayonly or --test parameter using $1.
 function CheckFiles() {
 # This function simply calls the function selected here.
+# OPTIONS: CheckFiles_DisplayOnly | CheckFiles_SaveData
 	CheckFiles_SaveData
 }
 
@@ -72,6 +76,7 @@ function PrepFunctionsList_StripFunction() {
 	sed 's/() {//g' RunMain_Pre.sh > RunMain_Post.sh
 }
 
+# DO NOT USE ! Not Working Yet. 
 function PrepFunctionsList_StripBrackets() {
         echo "Preparing Functions List..."
         echo "Stripping Unnecessary Content from File: [Brackets] "
