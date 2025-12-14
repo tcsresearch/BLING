@@ -1,13 +1,22 @@
-# Simon_Sed.bfunc - a wrapper for Sed.
+# SimonSed.bfunc - a wrapper for Sed.
+# This library has many functions to simplify usage of sed.
+
+## TODO:   Add function to strip a specified string $Sed_String.
+##         Enable CASE statement - e.g. SimonSed --strip --string="foo" or SimonSed --strip-whitespace or SimonSed --strip-lead-chars=[num of chars]
+
+function Strip_String() {
+  echo " Not Implemented Yet."
+}
+
 
 # Function to trim leading/trailing whitespace (spaces, tabs, newlines)
-trim_whitespace() {
+Trim_Whitespace() {
   local input_string="$1"
   # Remove leading whitespace (\s* or ^\s*), trailing whitespace (\s*$ or \s*$)
   sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' <<< "$input_string"
 }
 
-function trim_whitespace_example() {
+function Trim_Whitespace_Example() {
 # Example Usage:
   whitespace_var="   Lots of space before and after   "
   trimmed_var=$(trim_whitespace "$whitespace_var")
@@ -16,4 +25,13 @@ function trim_whitespace_example() {
 }
 
 
+function Strip_Lead-Characters() {
+  echo "Not Implemented Yet."
+}
 
+function Usage() {
+  echo "Usage: $0 --strip-string=[string] [FILE] - Strip a specified string from a file."
+  echo "Usage: $0 --strip-whitespace [FILE] - Strip whitespace from a file."
+  echo "Usage: $0 --strip-lead-characters=[number of characters] [FILE] - Strip a specified number of lead characters from a file."
+  echo " "
+}
