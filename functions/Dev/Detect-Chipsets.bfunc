@@ -1,3 +1,5 @@
+# Detect-Chipsets - Uses inxi to display chipsets.
+
 function Detect-Chipsets() {
   inxi -Fzxx
 }
