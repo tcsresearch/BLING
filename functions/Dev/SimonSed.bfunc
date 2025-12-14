@@ -2,7 +2,6 @@
 # This library has many functions to simplify usage of sed.
 
 ## TODO:   Add function to strip a specified string $Sed_String.
-##         Enable CASE statement - e.g. SimonSed --strip --string="foo" or SimonSed --strip-whitespace or SimonSed --strip-lead-chars=[num of chars]
 
 function Strip_String() {
   echo " Not Implemented Yet."
@@ -31,7 +30,27 @@ function Strip_Lead-Characters() {
 
 function Usage() {
   echo "Usage: $0 --strip-string=[string] [FILE] - Strip a specified string from a file."
-  echo "Usage: $0 --strip-whitespace [FILE] - Strip whitespace from a file."
+  echo "Usage: $0 --trim-whitespace [FILE] - Trim whitespace from a file."
   echo "Usage: $0 --strip-lead-characters=[number of characters] [FILE] - Strip a specified number of lead characters from a file."
   echo " "
 }
+
+
+#################################################################################################################
+
+# Check the value of the first argument ($1)
+case "$1" in
+    "--strip-string")
+        Strip_String $1
+        ;;
+    "--trim-whitespace")
+        Trim-WhiteSpace
+        ;;
+    "--strip-lead-characters")
+        Strip_Lead_Characters $1
+        ;;
+    *)
+        Usage
+        exit 1
+        ;;
+esac
