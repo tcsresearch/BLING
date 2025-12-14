@@ -1,6 +1,5 @@
 # BootConfigTool - Changes between graphical and commandline boot types
 #
-## TODO: Setup case for usage.
 
 function BootConfigTool_DisplayBanner() {
 	echo "$0."
@@ -10,7 +9,9 @@ function BootConfigTool_DisplayBanner() {
 function BootConfigTool_Usage() {
 	echo "Usage: "	
 	echo " $0 --get:				Displays current config."
-	echo " $0 --set [ commandline | graphical ]: 	Sets boot type to the specified type."
+	echo " $0 --set [ commandline | graphical ]: 	[ NOT IMPLEMENTED] Sets boot type to the specified type."
+	echo " $0 --set-commandline: 					Sets boot type to commandline."
+	echo " $0 --set-graphical: 						Sets boot type to graphical."
 	echo " "
 }
 
@@ -34,7 +35,29 @@ function BootConfigTool_SetGraphical() {
 	echo " "
 }
 
-echo " Not Fully Implemented Yet."
-echo "  Use one of the functions to call manually for now."
-echo " "
+# This can be removed after testing.
+function NotImplementedMessage() {
+	echo " Not Fully Implemented Yet."
+	echo "  Use one of the functions to call manually for now."
+	echo " "
+}
+
+#################################################################################################################
+
+# Check the value of the first argument ($1)
+case "$1" in
+    "--get")
+        BootConfigTool_GetCurrentConfig
+        ;;
+    "--set-commandline")
+        BootConfigtool_SetCommandLine
+        ;;
+    "--set-graphical")
+        BootConfigTool_SetGraphical
+        ;;
+    *)
+        BootConfigTool_Usage
+        exit 1
+        ;;
+esac
 
