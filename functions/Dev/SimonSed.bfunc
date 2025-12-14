@@ -1,0 +1,19 @@
+# Simon_Sed.bfunc - a wrapper for Sed.
+
+# Function to trim leading/trailing whitespace (spaces, tabs, newlines)
+trim_whitespace() {
+  local input_string="$1"
+  # Remove leading whitespace (\s* or ^\s*), trailing whitespace (\s*$ or \s*$)
+  sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' <<< "$input_string"
+}
+
+function trim_whitespace_example() {
+# Example Usage:
+  whitespace_var="   Lots of space before and after   "
+  trimmed_var=$(trim_whitespace "$whitespace_var")
+  echo "Original: '$whitespace_var'"
+  echo "Trimmed:  '$trimmed_var'"
+}
+
+
+
