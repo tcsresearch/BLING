@@ -1,3 +1,5 @@
+# DisableSecureBoot - Disables secure boot
+
 function DisableSecureBoot() {
  # TODO: Prompt for confirmation first!
   mokutil --sb-state
