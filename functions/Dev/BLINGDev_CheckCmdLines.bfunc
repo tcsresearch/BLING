@@ -1,0 +1,72 @@
+function ArgParser_IsCmdLinesNotEmpty() {
+  # Check if any args specified; exit if not.
+  if [ $# -eq 0 ]; then
+    echo "Error: No arguments provided."
+    echo "Usage: $0 <argument1> [argument2]..."
+  fi
+break # Use instead of exit.
+}
+
+function ArgParser_CheckMisc() {
+# Check Miscellaneous Args, such as verbose
+  while getopts "tvdndm:" flag; do
+    case "${flag}" in
+      t) test=true ;;
+      v) verbose=true ;;
+      d) debug=true ;;
+      n) name=${OPTARG} ;;
+      d) delete=true ;;
+      m) metadata=true ;;
+      *) echo "Invalid option: -${OPTARG}" >&2; exit 1 ;;
+    esac
+  done # Close while loop.
+}
+
+function ArgParser_CheckTest() {
+## Check Parameters ##
+  if [ "$test" = true ]; then
+    echo "Test mode enabled.  Only the URLs will display.  No downloads will take place."
+    UrlsOnly=" -u"
+    cmdlines=" -u -n -m --delete --download-metadata" # Will be obsoleted when UrlsOnly is imnplemented.
+  fi
+
+function ArgParser_CheckVerbose() {
+## Check Parameters ##
+  if [ "$verbose" = true ]; then
+    echo "Verbose mode enabled."
+    # UrlsOnly=" -u"
+    # cmdlines=" -u -n -m --delete --download-metadata" # Will be obsoleted when UrlsOnly is imnplemented.
+  fi
+
+function ArgParser_CheckDebug() {
+## Check Parameters ##
+  if [ "$debug" = true ]; then
+    echo "debug mode enabled."
+    # UrlsOnly=" -u"
+    # cmdlines=" -u -n -m --delete --download-metadata" # Will be obsoleted when UrlsOnly is imnplemented.
+  fi
+
+## Do we need this?
+  if [ -n "$name" ]; then
+    echo "Hello, $name."
+  fi
+}
+
+
+# FIXME: We will need to if/else these two.
+
+function ArgParser_CheckDelete() {
+  if [ "delete" = true ]; then
+    Deletion_Enabled=" -d"
+    echo "Deletion Enabled.  Obsolete packages will be removed."
+  fi
+}
+
+function ArgParser_CheckMetadata() {
+  if [ "metadata" = true ]; then
+    MetaData_Enabled=" -m"
+    echo "Metadata Downloads Enabled.  Metadata will be saved."
+fi
+}
+
+
