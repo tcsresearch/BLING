@@ -1,0 +1,47 @@
+## Confirm Cecho is installed. ##
+function IsCechoInstalled() {
+        if ! [ -f "/etc/BLING/functions/Cecho.bfunc)" ]; then
+          echo 'ERROR [IsCechoInstalled]: Cecho is NOT Installed.'
+        else
+          echo "Cecho Is Installed."
+          echo " "
+          IsCechoEnabled
+        fi
+}
+
+## Confirm Cecho is enabled. ##
+function IsCechoEnabled() {
+        if ! [ -x "$(command -v cecho)" ]; then
+          echo 'Error [IsCechoEnabled]: cecho is not installed.' >&2
+        break # Use instead of exit.
+        else
+          echo "Cecho is Enabled."
+          echo " "
+          EnableCechoAlias
+        fi
+}
+
+
+####################################################################################################
+# Cecho Alias #                                                                                    #
+####################################################################################################
+# TODO: Add CASE and consolidate into a single function
+#       Should we create and use a systemd service with a PID?
+
+function EnableCechoAlias() {
+        if [ -x "$(command -v cecho)" ]; then
+                echo "Enabling Cecho Alias..."
+                echo " "
+                echo="cecho"
+                EchoCmd="cecho"
+        fi
+}
+
+function DisableCechoAlias() {
+        if [ -x "$(command -v cecho)" ]; then
+                echo "Disable Cecho Alias..."
+                echo " "
+                echo="echo"
+                EchoCmd="echo"
+        fi
+}
