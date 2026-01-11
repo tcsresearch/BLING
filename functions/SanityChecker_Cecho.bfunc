@@ -16,6 +16,7 @@ function IsCechoInstalled() {
 		IsCechoEnabled # Check if Cecho is sourced and executable.
 	else	
 		echo "ERROR: Cecho is NOT installed."
+		break # Use instead of exit.
 		# exit 1 # this will  exit BASH or tmux shell - Confirmed.
 fi
 }
@@ -25,6 +26,7 @@ function IsCechoEnabled() {
 		echo "Cecho is Enabled."
 	else
 		echo 'Error: Cecho is not installed.' >&2
+		break # Use instead of exit.
   		# exit 1 # this will exit BASH or tmux shell - Confirmed. 
 	fi
 }
