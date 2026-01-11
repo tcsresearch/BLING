@@ -39,10 +39,8 @@ function EnableCechoAlias() {
 }
 
 function DisableCechoAlias() {
-        if [ -x "$(command -v cecho)" ]; then
-                echo "Disable Cecho Alias..."
-                echo " "
-                echo="echo"
-                EchoCmd="echo"
-        fi
+        echo "Disabling Cecho Alias..."
+        echo " "
+        echo="echo"
+        EchoCmd="echo"
 }
