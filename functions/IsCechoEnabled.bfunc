@@ -2,6 +2,7 @@
 function IsCechoInstalled() {
         if ! [ -f "/etc/BLING/functions/Cecho.bfunc)" ]; then
           echo 'ERROR [IsCechoInstalled]: Cecho is NOT Installed.'
+          break # Use instead of exit.
         else
           echo "Cecho Is Installed."
           echo " "
