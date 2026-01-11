@@ -53,6 +53,19 @@
 </div>
 
 <hr>
+<div id="Updates_01-2026">
+  <details open>
+    <summary>
+      <b>Updates 01/2026</b>
+    </summary>
+      <ul>
+        <li> Added ExpportHacks.bfunc </li>
+      </ul>
+  </details>
+</div>
+
+
+<hr>
 <div id="Updates_12-2025">
   <details open>
     <summary>
