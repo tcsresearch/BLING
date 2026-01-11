@@ -1,0 +1,9 @@
+function EnableExportHack() {
+##### Set Export Hack #####
+	set -a  # Enable automatic exporting of all subsequent variable assignments
+}
+
+function DisableExportHack() {
+##### Unset Export Hack #####
+	set +a  # Disble automatic exporting of all subsequent variable assignments
+}
