@@ -59,7 +59,7 @@
       <b>Updates 01/2026</b>
     </summary>
       <ul>
-        <li> Added ExpportHacks.bfunc </li>
+        <li> Added ExportHacks.bfunc </li>
       </ul>
   </details>
 </div>
