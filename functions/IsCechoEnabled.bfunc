@@ -1,4 +1,10 @@
 ## Confirm Cecho is installed. ##
+
+# Simple function alias for use in other scripts.
+function SanityChecker_Cecho() {
+        IsCechoInstalled 
+}
+
 function IsCechoInstalled() {
         if ! [ -f "/etc/BLING/functions/Cecho.bfunc)" ]; then
           echo 'ERROR [IsCechoInstalled]: Cecho is NOT Installed.'
