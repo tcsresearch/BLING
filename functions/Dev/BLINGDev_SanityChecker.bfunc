@@ -7,8 +7,7 @@ check_path() {
     # Define colors
     GREEN='\033[0;32m'   # ANSI code for green.
     RED='\033[0;31m'     # ANSI code for red.
-    RED='\033[0;31m'     # Resets color to default. 
-    NC='\033[0m'         # No Color
+    NC='\033[0m'         # Resets color to default. 
 
     # Check if input is provided
     if [ -z "$1" ]; then
