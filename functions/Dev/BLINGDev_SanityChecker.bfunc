@@ -1,0 +1,40 @@
+# BLINGDev_SanityChecker - Checks if a file or folder exists and displays colorized status.
+# Taken From: https://www.google.com/search?q=bash+function+check+if+files+and+folders+exist+and+say+okay+or+not+with+color&newwindow=1&client=firefox-b-1-d&hs=UvmU&sca_esv=73000156de4ea350&sxsrf=ANbL-n4mugw6Mh7oBaPxGsjF5-y-JyZaPw%3A1772566843156&ei=OzmnaYmjCYnhwN4PxcmH8Ao&biw=1638&bih=704&ved=0ahUKEwjJrJuIvoSTAxWJMNAFHcXkAa4Q4dUDCBE&uact=5&oq=bash+function+check+if+files+and+folders+exist+and+say+okay+or+not+with+color&gs_lp=Egxnd3Mtd2l6LXNlcnAiTWJhc2ggZnVuY3Rpb24gY2hlY2sgaWYgZmlsZXMgYW5kIGZvbGRlcnMgZXhpc3QgYW5kIHNheSBva2F5IG9yIG5vdCB3aXRoIGNvbG9ySODOAVDsQliazQFwAXgBkAEAmAHVAaABiDmqAQcxNy40NS4xuAEDyAEA-AEBmAIvoALoLcICChAAGLADGNYEGEfCAgUQABiABMICCxAAGIAEGJECGIoFwgIGEAAYFhgewgIIEAAYogQYiQXCAggQABiABBiiBMICBRAAGO8FwgIFECEYoAHCAgUQIRirAsICBRAhGJ8FmAMAiAYBkAYIkgcGMy40My4xoAe4zgKyBwYyLjQzLjG4B9wtwgcIMC41LjQxLjHIB84BgAgA&sclient=gws-wiz-serp
+
+# TODO: Integrate with Cecho.
+
+check_path() {
+    # Define colors
+    GREEN='\033[0;32m'   # ANSI code for green.
+    RED='\033[0;31m'     # ANSI code for red.
+    RED='\033[0;31m'     # Resets color to default. 
+    NC='\033[0m'         # No Color
+
+    # Check if input is provided
+    if [ -z "$1" ]; then
+        echo -e "${RED}[!] No path provided${NC}"
+        return
+    fi
+
+    # Check existence
+    if [ -e "$1" ]; then
+        echo -e "${GREEN}[OK]${NC} $1 exists."
+    else
+        echo -e "${RED}[NOT OK]${NC} $1 does not exist."
+    fi
+}
+
+# Example usage:
+# check_path "/etc/hosts"
+# check_path "/home/user/missing_folder"
+
+#################################################################################################
+# Key Components: #
+
+  #  -e "$1": The core conditional check for existence.
+  #  echo -e: Enables interpretation of backslash escapes (colors).
+  #  \033[0;32m: ANSI code for green.
+  #  \033[0;31m: ANSI code for red.
+  #  \033[0m: Resets color to default. 
+
+  
