@@ -18,9 +18,9 @@ check_path() {
 
     # Check existence
     if [ -e "$1" ]; then
-        echo -e "${GREEN}[OK]${NC} $1 exists."
+        echo -e "${GREEN}[ OK ]${NC} $1 exists."
     else
-        echo -e "${RED}[NOT OK]${NC} $1 does not exist."
+        echo -e "${RED}[ NOT FOUND ]${NC} $1 does not exist."
     fi
 }
 
