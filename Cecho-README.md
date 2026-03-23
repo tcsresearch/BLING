@@ -30,6 +30,7 @@ myprint "This works regardless of whether cecho is installed."
 Method 2: Use an if/else statement with command -v 
 This method checks for the command's existence every time the block is executed.
 </h4>
+    
 ```
 message="Hello World!"
 
