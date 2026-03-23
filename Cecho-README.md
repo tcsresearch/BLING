@@ -55,10 +55,14 @@ $CMD "Hello World!"
 ```
 
 <hr>
+<p><h4>
 Explanation of the command check:
-
+</h4>
+    
 - command -v cecho: This standard POSIX utility attempts to locate the cecho command.
 
 - >/dev/null 2>&1: This redirects both standard output (1) and standard error (2) to /dev/null, suppressing any messages from the check itself.
 
 - The if statement evaluates the exit status of command -v. A status of zero means success (command found), while a non-zero status means failure (command not found). 
+
+</p>
