@@ -8,7 +8,7 @@ fi
   # Assuming 'files.list' contains a list of filenames, one per line
   for file in $(cat $1); do
     echo "Loading Function: $file"
-    source $file
+    source "$file" # Added quotes around variable to fix sourcing issue.
     if [ $? -eq 0 ] 
     then 
       echo "Successfully Loaded Function: $file." 
