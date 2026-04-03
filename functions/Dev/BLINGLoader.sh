@@ -1,5 +1,4 @@
-for bfunc in /etc/BLING/*.bfunc
-do
-	source $bfunc
+for bfunc in /etc/BLING/*.bfunc; do
+    source "$bfunc"
 done
 
