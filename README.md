@@ -53,6 +53,19 @@
 </div>
 
 <hr>
+<div id="Updates_04-2026">
+  <details open>
+    <summary>
+      <b>Updates 04/2026</b>
+    </summary>
+      <ul>
+        <li> Added CronTool.bfunc (UNTESTED!) </li>
+      </ul>
+  </details>
+</div>
+
+
+<hr>
 <div id="Updates_03-2026">
   <details open>
     <summary>
