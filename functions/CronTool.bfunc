@@ -1,7 +1,7 @@
 # CronToolfunction UpdateCron() {
 
 
-## METHOD 1: Add an Entry (Non-Destructive
+## METHOD 1: Add an Entry (Non-Destructive)
 # The safest way to append a new job is to list the existing entries, append your new command, and pipe the entire output back into crontab.
 
 	# EXAMPLE #
