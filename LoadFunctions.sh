@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # This script load all the .func in the functions folder.
 
 # Define Variables #
