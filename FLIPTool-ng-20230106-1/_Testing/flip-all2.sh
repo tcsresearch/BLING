@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 ## TODO: Fix queryformartargs - not working
 
 corecmd="rpm -qa"
