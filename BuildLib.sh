@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 ### for i in *.txt;do cat $i >> output.txt;done
 ### cat *.js > merged_`date +%Y%m%d%H%M`.js
 #
