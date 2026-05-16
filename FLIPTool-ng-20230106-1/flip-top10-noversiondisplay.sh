@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 echo "Top 10 Largest Installed Packages:"
 echo "All sizes are shown in megabytes (MB)."
 
