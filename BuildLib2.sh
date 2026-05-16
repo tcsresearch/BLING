@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 echo "BLING Library Utility - Version 0.2"
 echo " "
 
