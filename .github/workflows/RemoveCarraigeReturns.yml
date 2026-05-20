@@ -1,3 +1,2 @@
-- name: Remove carriage returns from all files
-  run: |
-    find . -type f -not -path '*/.*' -exec sed -i 's/\r//g' {} +
+- name: Remove carriage returns from specific files
+run: find . -name "*.sh" -exec sed -i 's/\r//g' {} +
