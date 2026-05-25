@@ -53,6 +53,19 @@
 </div>
 
 <hr>
+<div id="Updates_05-2026">
+  <details open>
+    <summary>
+      <b>Updates 05/2026</b>
+    </summary>
+      <ul>
+        <li> Added SourceExcludesFile.bfunc (UNTESTED!) </li>
+        <li> Added FuncUtil.sh (UNTESTED!) </li>
+      </ul>
+  </details>
+</div>
+
+<hr>
 <div id="Updates_04-2026">
   <details open>
     <summary>
