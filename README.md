@@ -16,7 +16,12 @@
 <hr>
 
 
-  
+<div id="Function-List">
+           <b><i>For a list of functions and their purposes, check out the Wiki.</i></b> 
+</div>
+
+<hr>
+
 <div id="Proposed-Features">
   <details>
     <summary>
