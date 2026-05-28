@@ -27,4 +27,4 @@
  * Save the above script as a new .sh file (e.g., generate_case.sh).
  * Make it executable (chmod +x generate_case.sh).
  * Run it, providing the path to your script file as an argument or by modifying SCRIPT_FILE within the script.
- * The output will be a Bash case statement that you can then integrate into another script or use directly. 
+ * The output will be a BASH case statement that you can then integrate into another script or use directly. 
