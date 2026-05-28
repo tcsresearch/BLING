@@ -61,6 +61,7 @@
       <ul>
         <li> Added SourceExcludesFile.bfunc (UNTESTED!) </li>
         <li> Added FuncUtil.sh (UNTESTED!) </li>
+        <li> Added SudoWrapper.bfunc (UNTESTED!) </li>
       </ul>
   </details>
 </div>
