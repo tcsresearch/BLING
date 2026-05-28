@@ -17,7 +17,7 @@
 
 
 <div id="Function-List">
-           <b><i>For a list of functions and their purposes, check out the Wiki.</i></b> 
+           <b><i>For a list of functions and their purposes, check out the <a href="https://github.com/tcsresearch/BLING/wiki">Wiki</a>.</i></b> 
 </div>
 
 <hr>
