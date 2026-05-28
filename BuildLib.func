@@ -4,10 +4,16 @@
 ## TODO
 # - Implement functions.
 
+## Define Version Variable ###
+BLC_Version="0.2.1"
+
 ## Define Folder Variables ##
 FuncDir="functions"
 BackupDir="_Backups"
 LibDir="lib"
+
+## Define Date Format Variable ##
+DateFormat="+%Y%m%d%H%M"
 
 ### Define Our Functions ### 
 	## TODO: Move to functions folder and source it.
@@ -54,7 +60,7 @@ BackupLib() {
 ## Backup Library If Exists ###
 if [ -f $BlingLib ]; then
 	echo "File $BlingLib Exists...Backing Up..."
-	cp -v $BlingLib ./$BackupDir/$BlingBackup_`date +%Y%m%d%H%M`.blib
+	cp -v $BlingLib ./"$BackupDir"/"$BlingBackup"_"$(date $DateFormat)".blib
 	echo "Backup Complete."
 	echo "Removing existing Library..."
 	rm $BlingLib
@@ -64,13 +70,13 @@ fi
 
 BuildLib() {
 # for i in $FuncDir/*.func;do cat $i > $BlingLib;done
-cat $FuncDir/*.func > $LibDir/BlingBuild_`date +%Y%m%d%H%M`.blib
+cat $FuncDir/*.func > "$LibDir/BlingBuild"_"$(date $DateFormat)".blib
 echo "BlingLib Rebuild Completed."
 }
 
 # Banner Function #
 DisplayBanner() {
 	echo "BLING Library Compiler."
-	echo "Version 0.1"
+	echo "Version $BLC_Version"
 }
 	
