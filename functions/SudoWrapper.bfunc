@@ -1,0 +1,15 @@
+# SudoWrapper.bfunc - if not root, run command $1 with sudo.
+
+#!/bin/env bash
+
+function SudoWrapper() {
+  # Check if the effective user ID (EUID) is 0 (root)
+  if [ "$EUID" -ne 0 ]; then
+    SUDO="sudo"
+  else
+    SUDO=""
+  fi
+
+  # Execute the command passed as the first argument ($1)
+  $SUDO "$1"
+}
