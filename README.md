@@ -58,6 +58,19 @@
 </div>
 
 <hr>
+<div id="Updates_06-2026">
+  <details open>
+    <summary>
+      <b>Updates 06/2026</b>
+    </summary>
+      <ul>
+        <li> Add custom gitls command for colorized file listing (UNTESTED!) </li>
+      </ul>
+  </details>
+</div>
+
+
+<hr>
 <div id="Updates_05-2026">
   <details open>
     <summary>
