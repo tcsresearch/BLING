@@ -1,3 +1,4 @@
+#!/bin/env bash
 
 # Define which Fedora releases to query
 ## TODO: Get current release from /etc/os-release and use below.
