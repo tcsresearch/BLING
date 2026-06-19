@@ -1,3 +1,5 @@
+#!/bin/env bash
+
 # TakeOwnership.sh - Take ownership via chown and chgrp and assign to current user.
 #
 
