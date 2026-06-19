@@ -80,3 +80,15 @@ function Main_Program() {
 	done
 }
 
+function Main_Program2() {
+	### --- Main Program --- ###
+	# FIXME: $Selected_TestList NOT WORKING.
+	# for TestName in $Selected_TestList
+	for TestName in $Selected_TestList
+	do
+		echo Running Static Analyzer Test $TestName... 
+		make $TestName > $LogDir/$TestName.log
+		echo $TestName Completed.  See $LogDir/$TestName.log For Results.
+	done
+}
+
