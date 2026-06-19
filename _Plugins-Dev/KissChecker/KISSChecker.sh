@@ -58,5 +58,8 @@ SanityCheck_LogDirExists
 SanityCheck_MakeFileExists
 # SanityCheck_IsKernelMakefile
 
+### CASE Options ###
+CaseOptions
+
 ### Run Main Program ###
 Main_Program
