@@ -1,3 +1,5 @@
+#!/bin/env bash
+
 ## Taken From
 #https://stackoverflow.com/questions/6212219/passing-parameters-to-a-bash-function
 
