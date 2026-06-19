@@ -1,3 +1,5 @@
+#!/bin/env bash
+
 #  Taken From
 #  https://dev.to/mackr2015/bash-alias-and-functions-3782
 #
