@@ -1,4 +1,4 @@
-!#/bin/env bash
+#!/bin/env bash
 
 # blingdev.sh - BLING Main Utility
 
