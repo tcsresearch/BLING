@@ -57,6 +57,7 @@ DisplayBanner
 SanityCheck_LogDirExists
 SanityCheck_MakeFileExists
 # SanityCheck_IsKernelMakefile
+GetCurrentReleaseVersion
 
 ### CASE Options ###
 CaseOptions
