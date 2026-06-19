@@ -1,3 +1,5 @@
+#!/bin/env bash
+
 # This script will run various static analyser checks on the Linux kernel, as per the Makefile.
 # Requires Kernel Makefile and compiled sources and/or vmlinux file.
 #
