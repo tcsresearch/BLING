@@ -1,3 +1,3 @@
-#!/bin env bash
+#!/bin/env bash
 
 systemctl set-default multi-user.target
