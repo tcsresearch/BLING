@@ -64,8 +64,9 @@
       <b>Updates 06/2026</b>
     </summary>
       <ul>
-        <li> Add custom gitls command for colorized file listing (UNTESTED!) </li>
-        <li> Add DeleteConfirmationWrapper.sh and DeleteConfirmationWrapper.bfunc (PARTIALLY DEVEOPED!) </li>
+        <li> Added custom gitls command for colorized file listing (UNTESTED!) </li>
+        <li> Added BuildRoot-Utility.sh (UNTESTED!) </li>
+        <li> Added DeleteConfirmationWrapper.sh and DeleteConfirmationWrapper.bfunc (PARTIALLY DEVEOPED!) </li>
       </ul>
   </details>
 </div>
