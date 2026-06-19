@@ -1,3 +1,5 @@
+#!/bin/env bash
+
 echo "Basic Info"
 echo "----------"
   inxi -M
