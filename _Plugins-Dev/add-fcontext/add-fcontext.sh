@@ -1,3 +1,5 @@
+#!/bin/env bash
+
 # add-fcontext-mediafiles.sh
 # This script will allow files in $MediaFilesDir to be accessible via Samba shares,
 #  and files in WebRootDir to be accessible as web pages.
