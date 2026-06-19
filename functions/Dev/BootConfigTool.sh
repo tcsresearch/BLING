@@ -6,7 +6,7 @@
 function BootConfigTool_DisplayBanner() {
 	echo "$0."
 	echo " "
-
+}
 
 function BootConfigTool_Usage() {
 	echo "Usage: "	
