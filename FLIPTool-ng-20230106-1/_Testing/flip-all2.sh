@@ -19,10 +19,10 @@ sortargs=" -rh " # initial options: -n / -rh
 # $corecmd --queryformat '%10{size} - %-25{name} \t %{version}\n' | sort $sortargs
 
 ### Test ###
-## $corecmd --queryformat '%10{size} - %-25{name} \t %{version}\n'  | sort $sortargs
+ $corecmd --queryformat '%10{size} - %-25{name} \t %{version}\n'  | sort $sortargs
 
-### Test 2 ###
-$corecmd --queryformat '$querysize - queryname \t $queryversion\n'  | sort $sortargs
+### Test 2 ###  FIXME: Only shows variables.
+## $corecmd --queryformat '$querysize - queryname \t $queryversion\n'  | sort $sortargs
 
 
 ### rpm -qa --queryformat '%10{size} - %-25{name} \t %{version}\n' | sort -n
