@@ -41,6 +41,12 @@ function SanityCheck_IsKernelMakefile() {
 	echo " "	# Fixes refusal to run on empty function.
 }
 
+function GetCurrentReleaseVersion () {
+	# Display current running version.
+	cat /etc/os-release | grep VERSION_ID
+	echo " "
+}
+
 function CaseOptions() {
 	# Check the value of the first argument ($1)
 	case "$1" in
