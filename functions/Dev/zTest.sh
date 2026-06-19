@@ -1,3 +1,5 @@
+#!/bin/env bash
+
 if [ -z "$1" ]; then
   echo "The first argument is null or empty."
 else
