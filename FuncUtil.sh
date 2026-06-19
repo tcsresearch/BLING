@@ -1,3 +1,5 @@
+#!/bin/env bash
+
 # FuncUtil.sh
 #  This script helps debug comples scripts that use many functions.
 #
