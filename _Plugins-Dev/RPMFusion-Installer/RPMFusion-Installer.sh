@@ -4,9 +4,12 @@
 Prog="dnf"
 FedoraReleaseVer="44"
 
+FullURL_Free="https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-44.noarch.rpm"
+FullURL_NonFree="https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-44.noarch.rpm"
+
 BaseURL_Free="https://download1.rpmfusion.org/free/fedora"
 BaseURL_NonFree="https://download1.rpmfusion.org/nonfree/fedora"
-URL="https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-44.noarch.rpm"
+
 Package_BaseName_Free="rpmfusion-free-release"
 Package_BaseName_NonFree="rpmfusion-nonfree-release"
 
@@ -14,6 +17,9 @@ Package_BaseName_NonFree="rpmfusion-nonfree-release"
 
 ### Main Program ##
 ## TODO: Perform 'rpm -q rpmfusion-free-release' and 'rpmfusion-nonfree-release'
+echo "Installing RPMFusion Free..."
 $prog install $BaseURL_Free/$Package_BaseName_Free-$FedoraReleaseVer.noarch.rpm
+echo " "
+echo "Installing RPMFusion NonFree..."
 $prog install $BaseURL_NonFree/$Package_BaseName_NonFree-$FedoraReleaseVer.noarch.rpm
 
