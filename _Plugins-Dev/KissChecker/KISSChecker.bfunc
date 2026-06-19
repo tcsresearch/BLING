@@ -46,15 +46,19 @@ function CaseOptions() {
 	case "$1" in
     	"--testlist-most")
         	echo "Selected CASE: --testlist-most"
+			Selected_TestList="TestList_Most"
         	;;
     	"--testlist-core")
         	echo "Selected CASE: --testlist-core"
+			Selected_TestList="TestList_Core"
         	;;
     	"--testlist-clang")
         	echo "Selected CASE: --testlist-clang"
+			Selected_TestList="TestList_Clang"
         	;;
 		"--testlist-cocci")
         	echo "Selected CASE: --testlist-cocci"
+			Selected_TestList="TestList_Cocci"
         	;;
     	*)
         	KCT_Usage
