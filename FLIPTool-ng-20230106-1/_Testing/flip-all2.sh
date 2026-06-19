@@ -18,8 +18,12 @@ sortargs=" -rh " # initial options: -n / -rh
 ### FIXME: The following line fails to display the package size (displays as 0):
 # $corecmd --queryformat '%10{size} - %-25{name} \t %{version}\n' | sort $sortargs
 
-### Test
-$corecmd --queryformat '%10{size} - %-25{name} \t %{version}\n'  | sort $sortargs
+### Test ###
+## $corecmd --queryformat '%10{size} - %-25{name} \t %{version}\n'  | sort $sortargs
+
+### Test 2 ###
+$corecmd --queryformat '$querysize - queryname \t $queryversion\n'  | sort $sortargs
+
 
 ### rpm -qa --queryformat '%10{size} - %-25{name} \t %{version}\n' | sort -n
 ### rpm -qa --queryformat '%10{size} - %-25{name} \t %{version}\n' | sort -rh
