@@ -1,3 +1,5 @@
+#!/bin/env bash
+
 # BootConfigTool - Changes between graphical and commandline boot types
 # Obsoletes: Boot-Graphical.sh, Boot-Console.sh
 
