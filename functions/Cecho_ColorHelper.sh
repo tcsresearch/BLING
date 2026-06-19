@@ -1,3 +1,5 @@
+#!/bin/env bash
+
 ## Taken From: https://unix.stackexchange.com/questions/124407/what-color-codes-can-i-use-in-my-bash-ps1-prompt
 
 # This script can be used to further develop Cecho.
