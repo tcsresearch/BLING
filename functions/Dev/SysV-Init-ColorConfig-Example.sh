@@ -1,3 +1,5 @@
+#!/bin/env bash
+
 # Read in our configuration
 if [ -z "${BOOTUP:-}" ]; then
     if [ -f /etc/sysconfig/init ]; then
