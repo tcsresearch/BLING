@@ -3,6 +3,7 @@
 ## Define Variables ##
 Prog="dnf"
 FedoraReleaseVer="44"
+## TODO: Add function to determine Fedora Release Version and place into $FedoraReleaseVer
 
 FullURL_Free="https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-44.noarch.rpm"
 FullURL_NonFree="https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-44.noarch.rpm"
