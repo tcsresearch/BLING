@@ -65,6 +65,7 @@
     </summary>
       <ul>
         <li> Add custom gitls command for colorized file listing (UNTESTED!) </li>
+        <li> Add DeleteConfirmationWrapper.sh and DeleteConfirmationWrapper.bfunc (PARTIALLY DEVEOPED!) </li>
       </ul>
   </details>
 </div>
