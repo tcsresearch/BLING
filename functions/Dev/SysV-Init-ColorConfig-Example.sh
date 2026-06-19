@@ -25,6 +25,7 @@ if [ -z "${BOOTUP:-}" ]; then
         # Verbosity of logging:
         LOGLEVEL=1
     fi
+    
     if [ "$CONSOLETYPE" = "serial" ]; then
         BOOTUP=serial
         MOVE_TO_COL=
