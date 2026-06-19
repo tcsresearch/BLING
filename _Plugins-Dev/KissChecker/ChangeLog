@@ -1,3 +1,10 @@
+## Changes in 0.1.3.5
+# Added CASE statement
+# Added Main_Program2 function for use with CASE statement
+#
+## Changes in 0.1.3.4
+# Skipped to 0.1.3.5
+#
 ## Changes in 0.1.3.3
 # Continue split into functions, config, etc. files.
 #
