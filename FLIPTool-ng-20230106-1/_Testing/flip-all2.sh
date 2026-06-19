@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 ## TODO: Fix queryformartargs - not working
 
+
+## This tool has been superceded by FLIPTool-2026.sh
+
 corecmd="rpm -qa"
 queryformatargs=" --queryformat '%10{size} - %-25{name} \t %{version}\n' "
 queryformatargs2=" '%10{size} - %-25{name} \t %{version}\n' "
