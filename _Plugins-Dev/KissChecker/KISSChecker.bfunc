@@ -1,27 +1,27 @@
 function DisplayBanner() {
-echo "Kernel Indepth Static Sanity (KISS) Checker Tool"
-echo "Version $Version.  Developed by TCS Research."
-echo "Release Date: $ReleaseDate"
-echo " "
-echo "Selected TestList Name: $Selected_TestList"
-echo "Tests To Run: ???  "
-echo " "
-# TODO: Align output.
+	echo "Kernel Indepth Static Sanity (KISS) Checker Tool"
+	echo "Version $Version.  Developed by TCS Research."
+	echo "Release Date: $ReleaseDate"
+	echo " "
+	echo "Selected TestList Name: $Selected_TestList"
+	echo "Tests To Run: ???  "
+	echo " "
+	# TODO: Align output.
 }
 
 function SanityCheck_LogDirExists() {
-## FIXME: Program fails when testlogs folder and files not present; introduce sanity check.
-#		if statement not working, does not create $LogDir.
-#		Have the sanity check root and use sudo if needed (will require chown/chmod as new folder will be root only).
-#
-if [ ! -d ${LogDir} ]
-then
-    mkdir -p ${LogDir}
-fi
+	## FIXME: Program fails when testlogs folder and files not present; introduce sanity check.
+	#		if statement not working, does not create $LogDir.
+	#		Have the sanity check root and use sudo if needed (will require chown/chmod as new folder will be root only).
+	#
+	if [ ! -d ${LogDir} ]
+	then
+    	mkdir -p ${LogDir}
+	fi
 
-#
-# Temp Fix For if Statement
-## mkdir -p testlogs
+	#
+	# Temp Fix For if Statement
+	## mkdir -p testlogs
 
 }
 
@@ -41,16 +41,38 @@ function SanityCheck_IsKernelMakefile() {
 	echo " "	# Fixes refusal to run on empty function.
 }
 
+function CaseOptions() {
+	# Check the value of the first argument ($1)
+	case "$1" in
+    	"--testlist-most")
+        	echo "Selected CASE: --testlist-most"
+        	;;
+    	"--testlist-core")
+        	echo "Selected CASE: --testlist-core"
+        	;;
+    	"--testlist-clang")
+        	echo "Selected CASE: --testlist-clang"
+        	;;
+		"--testlist-cocci")
+        	echo "Selected CASE: --testlist-cocci"
+        	;;
+    	*)
+        	KCT_Usage
+        	return 1
+        	;;
+	esac
+}
+
 
 function Main_Program() {
-### --- Main Program --- ###
-# FIXME: $Selected_TestList NOT WORKING.
-# for TestName in $Selected_TestList
-for TestName in $TestList_Most
-do
-	echo Running Static Analyzer Test $TestName... 
-	make $TestName > $LogDir/$TestName.log
-	echo $TestName Completed.  See $LogDir/$TestName.log For Results.
-done
+	### --- Main Program --- ###
+	# FIXME: $Selected_TestList NOT WORKING.
+	# for TestName in $Selected_TestList
+	for TestName in $TestList_Most
+	do
+		echo Running Static Analyzer Test $TestName... 
+		make $TestName > $LogDir/$TestName.log
+		echo $TestName Completed.  See $LogDir/$TestName.log For Results.
+	done
 }
 
