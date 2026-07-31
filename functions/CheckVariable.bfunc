@@ -1,4 +1,4 @@
-# CheckFunction.bfunc -  Checks if a variable is not empty before continuing.
+# CheckVariable.bfunc -  Checks if a variable is not empty before continuing.
 
 check_variable() { 
     local MY_VAR="$1"
@@ -14,8 +14,8 @@ check_variable() {
 }
 
 # Testing the function
-check_variable "Hello"  # Continues
-check_variable ""       # Stops
+#   check_variable "Hello"  # Continues
+#   check_variable ""       # Stops
 
 
 check_variable_fast() {
