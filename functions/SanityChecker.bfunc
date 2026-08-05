@@ -1,0 +1,27 @@
+####################################################################################################################################
+# Source If Exists Function 	(SanityChecker)												   #
+####################################################################################################################################
+# Function to source files in a given directory with a specific extension
+# TODO: If folder does not exist, create it if --mkdir option is called (Requires new CASE Statement.)
+#        Enable Cecho.
+#        Print warning or error if file/folder not found.
+#       Create --strict option to quit if files/folders not found.
+
+SanityChecker() {
+    local dir="$1"
+    local pattern="$2"
+    if [[ -d "$dir" ]]; then
+        echo "${brightwhite} Sourcing files from: ${brightyellow} $dir ${reset}"
+	echo "-------------------------------------------------------------------------------------------"
+	# Use a glob to find matching files and loop through them
+        for file in "$dir"/$pattern; do
+            # Check if the glob found actual files (and not just the literal pattern if no files match)
+            if [[ -f "$file" ]]; then
+                echo "  ${brightyellow} Sourcing: ${brightblue} $file"
+                source "$file"
+            fi
+        done
+    else
+        echo "Directory not found: $dir"
+    fi
+}
