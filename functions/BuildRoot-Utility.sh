@@ -1,3 +1,5 @@
+#!/bin/env bash
+
 ### BuildRoot Utility ###
 # DEFINE VERSION #
 BRU_Version="0.1"
