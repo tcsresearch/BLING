@@ -69,11 +69,11 @@ function printcolor() {
         local FG=$1
         local BG=$2
 
-        fg=`eval echo "\$\{$FG\}"`
-        bg=`eval echo "\$\{BG_$BG\}"`
+        fg=$(eval echo "\$\{$FG\}")
+        bg=$(eval echo "\$\{BG_$BG\}")
         eval echo -en "$fg$bg"
 
-        printf ' $%-17s' $FG;
+        printf ' $%-17s' "$FG";
         echo -en "${COL_RESET}"
 }
 
@@ -87,31 +87,31 @@ function colornames() {
         local fgcolor bgcolor
         echo "List of color variables. "
         #table
-        for bgbright in ${lowup[@]}
+        for bgbright in "${lowup[@]}"
         do
                 #echo "writing ${bgbright:1} bg colors"
                 #column header
-                for bg in ${colors[@]}
+                for bg in "${colors[@]}"
                 do
                         # echo -en "\$$bg\t"
-                        printf ' $BG_%-14s' ${bgbright:1}$bg;
+                        printf " $BG_%-14s" ${bgbright:1}$bg;
                 done
 
                 # line feed:
                 echo ""
 
-                for fgbright in ${lowup[@]}
+                for fgbright in "${lowup[@]}"
                 do
 
                         #echo "writing ${fgbright:1} fg colors"
-                        for fg in ${colors[@]}
+                        for fg in "${colors[@]}"
                         do
                                 fgcolor=${fgbright:1}$fg
 
-                                for bg in ${colors[@]}
+                                for bg in "${colors[@]}"
                                 do
                                         bgcolor=${bgbright:1}$bg
-                                        printcolor $fgcolor $bgcolor
+                                        printcolor "$fgcolor" "$bgcolor"
                                 done
 
                                 # line feed:
@@ -137,13 +137,13 @@ function colorhelp() {
 function colorgrid() {
         iter=16
         while [ $iter -lt 52 ]; do
-                second=$[$iter+36]
-                third=$[$second+36]
-                four=$[$third+36]
-                five=$[$four+36]
-                six=$[$five+36]
-                seven=$[$six+36]
-                if [ $seven -gt 250 ];then seven=$[$seven-251]; fi
+                second=$(($iter+36))
+                third=$(($second+36))
+                four=$(($third+36))
+                five=$(($four+36))
+                six=$(($five+36))
+                seven=$(($six+36))
+                if [ $seven -gt 250 ];then seven=$(($seven-251)); fi
 
                 echo -en "\033[38;5;$(echo $iter)m█ "
                 printf "%03d" $iter
