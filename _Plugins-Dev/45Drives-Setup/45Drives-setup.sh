@@ -17,19 +17,19 @@ function get_base_distro() {
 	    distro=$(cat /etc/os-release | grep '^ID=' | head -1 | sed 's/ID=//' | sed 's/"//g' | awk '{print $1}')
 	fi
 
-    echo $distro
+    echo "$distro"
 }
 
 function get_distro() {
 	local distro=$(cat /etc/os-release | grep '^ID=' | head -1 | sed 's/ID=//' | sed 's/"//g' | awk '{print $1}')
     
-    echo $distro
+    echo "$distro"
 }
 
 function get_version_id() {
 	local version_id=$(cat /etc/os-release | grep '^VERSION_ID=' | head -1 | sed 's/VERSION_ID=//' | sed 's/"//g' | awk '{print $1}' | awk 'BEGIN {FS="."} {print $1}')
     
-    echo $version_id
+    echo "$version_id"
 }
 
 euid=$(id -u)
