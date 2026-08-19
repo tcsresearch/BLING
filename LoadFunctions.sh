@@ -7,5 +7,5 @@ FuncDir='functions'
 # for i in *.txt;do cat $i >> output.txt;done
 
 echo "Loading Functions..."
-for i in functions/*.func;do source $i;done
+for i in "$FuncDir"/*.func;do source "$i";done
 echo "Functions Loaded."
