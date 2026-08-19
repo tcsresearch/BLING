@@ -9,7 +9,7 @@ Args="-Rhf"
 echo "Current User Is: $CurrentUser"
 
 ## TODO: Can also use this:
-sudo chown -R $(whoami):$(whoami) $1 # Needs testing.
+sudo chown -R "$(whoami):$(whoami)" $1 # Needs testing.
 
 ## TODO: use 'ls | grep' to find entries that are not owned by current user and call chown/chgrp 
 
