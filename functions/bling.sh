@@ -1,6 +1,8 @@
+#/bin/env bash
+
 # bling.sh - BLING Main Utility
 
-#/bin/bash
+
 
 function BLING_DisplayBanner() {
   echo "BLING - BASH Library Next Gen - Version $BLING_Version."
