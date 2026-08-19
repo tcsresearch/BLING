@@ -1,10 +1,10 @@
 #!/bin/bash
 
-read -p "WARNING: This action requires confirmation. To continue, type 'delete': " confirmation
+read -rp "WARNING: This action requires confirmation. To continue, type 'delete': " confirmation
 
 while [[ "$confirmation" != "delete" ]]; do
   echo "Incorrect confirmation text. Please type 'delete' to proceed."
-  read -p "Type 'delete' to continue: " confirmation
+  read -rp "Type 'delete' to continue: " confirmation
 done
 
 echo "Confirmation successful. Proceeding with the action."
