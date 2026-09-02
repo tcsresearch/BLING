@@ -6,6 +6,8 @@
     RED='\033[0;31m'
     NC='\033[0m' # No Color
 
+# TODO: If checking for a file, and folder exists with the same name, print a message stating the folder exists but you specified a file.
+#       If checking for a folder, and file exists with the same name, print a message stating the file exists but you specified a folder.
 
 # Function to check a file path
 check_path_file() {
@@ -33,15 +35,17 @@ check_path_folder() {
         echo -e "${ORANGE}[ WARNING ]${NC} Folder $1 does not exist."
         
         # Interactive prompt for folder creation
-        read -p "Would you like to create this folder? (y/N): " response
+        # Disabled first entry for ShellCheck
+        # read -p "Would you like to create this folder? (y/N): "
+        read -pr "Would you like to create this folder? (y/N): "
         case "$response" in
             [yY][eE][sS]|[yY])
                 mkdir -p "$folder_path"
                 if [ $? -eq 0 ]; then
-                    echo -e "${GREEN} [OK]:${NC} Folder created at '$folder_path'."
+                    echo -e "${GREEN} [ OK ]:${NC} Folder created at '$folder_path'."
                     return 0
                 else
-                    echo "${RED} [ERROR]:${NC} Failed to create folder at '$folder_path'."
+                    echo "${RED} [ ERROR ]:${NC} Failed to create folder at '$folder_path'."
                     return 1
                 fi
                 ;;
