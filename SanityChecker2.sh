@@ -11,10 +11,12 @@
 check_path_file() {
     local file_path="$1"
     if [ -f "$file_path" ]; then
-        echo "Success: File exists at '$file_path'."
+        # echo "Success: File exists at '$file_path'."
+        echo -e "$1 exists.  ${GREEN} [ OK ]${NC}"
         return 0
     else
-        echo "Error: File does not exist at '$file_path'."
+        # echo "Error: File does not exist at '$file_path'."
+        echo -e "$1 does not exist.  ${RED}  [ NOT OK ]${NC}"
         return 1
     fi
 }
@@ -23,10 +25,12 @@ check_path_file() {
 check_path_folder() {
     local folder_path="$1"
     if [ -d "$folder_path" ]; then
-        echo "Success: Folder exists at '$folder_path'."
+        # echo "Success: Folder exists at '$folder_path'."
+        echo -e "${GREEN}[ OK ]${NC} Folder $1 Exists."
         return 0
     else
-        echo "Error: Folder does not exist at '$folder_path'."
+        # echo "Error: Folder does not exist at '$folder_path'."
+        echo -e "${ORANGE}[ WARNING ]${NC} Folder $1 does not exist."
         
         # Interactive prompt for folder creation
         read -p "Would you like to create this folder? (y/N): " response
@@ -34,10 +38,10 @@ check_path_folder() {
             [yY][eE][sS]|[yY])
                 mkdir -p "$folder_path"
                 if [ $? -eq 0 ]; then
-                    echo "Success: Folder created at '$folder_path'."
+                    echo -e "${GREEN} [OK]:${NC} Folder created at '$folder_path'."
                     return 0
                 else
-                    echo "Error: Failed to create folder at '$folder_path'."
+                    echo "${RED} [ERROR]:${NC} Failed to create folder at '$folder_path'."
                     return 1
                 fi
                 ;;
