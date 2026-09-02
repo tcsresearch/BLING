@@ -8,8 +8,6 @@
     RED='\033[0;31m'
     NC='\033[0m' # No Color
 
-# TODO: If checking for a file, and folder exists with the same name, print a message stating the folder exists but you specified a file.
-#       If checking for a folder, and file exists with the same name, print a message stating the file exists but you specified a folder.
 
 # Function to check a file path
 check_path_file() {
