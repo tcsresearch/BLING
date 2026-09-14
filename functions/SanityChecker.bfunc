@@ -17,10 +17,11 @@
 #####################################################################################################################################
 function LoadColors() {
 # Define Our Colors
-# Define color variables
+# NEW Sep 14, 2026: Add orange color.
 	  black=$(tput setaf 0)
 	  red=$(tput setaf 1)
 	  green=$(tput setaf 2)
+      orange=$(tput setaf 166)
 	  yellowbrown=$(tput setaf 3)
 	  blue=$(tput setaf 4)
 	  magenta=$(tput setaf 5)
