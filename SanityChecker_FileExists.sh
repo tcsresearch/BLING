@@ -1,4 +1,4 @@
-check_path() {
+CheckPath_File() {
     # Define colors
     GREEN='\033[0;32m'
     RED='\033[0;31m'
@@ -11,7 +11,7 @@ check_path() {
     fi
 
     # Check existence
-    if [ -e "$1" ]; then
+    if [ -f "$1" ]; then
         # echo "$1 exists."
         # echo -e "{GREEN} [ OK ]${NC}"
         # echo -e "$1 exists." && echo -e "{GREEN} [ OK ]${NC}"
@@ -27,7 +27,7 @@ check_path() {
 }
 
 #### Main Program ####
-check_path $1
+CheckPath_File $1
 
 # Example usage:
 # check_path "/etc/hosts"
