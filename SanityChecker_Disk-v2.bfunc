@@ -1,0 +1,50 @@
+#######################################################################################################################
+# SanityChecker Function: DISK Space Checker (Supports Auto-Detected Units)                                            #
+#######################################################################################################################
+SanityChecker_Disk() {
+    # Ensure directory and required space are provided
+    if [ -z "$1" ] || [ -z "$2" ]; then
+        echo "Usage: SanityChecker_Disk <directory> <required_space[M|G]> [M|G]"
+        return 1
+    fi
+
+    local target_dir="$1"
+    local raw_space="$2"
+    local unit="$3"
+    local required_space
+
+    # Auto-detect unit if a trailing character (M/m/G/g) is found in the second argument
+    if [[ "$raw_space" =~ ^([0-9]+)([mMgG])$ ]]; then
+        required_space="${BASH_REMATCH[1]}"
+        unit="${BASH_REMATCH[2]}"
+    elif [[ "$raw_space" =~ ^([0-9]+)$ ]]; then
+        required_space="$raw_space"
+        # Fallback to third parameter or default to G if third parameter is empty
+        unit="${unit:-G}"
+    else
+        echo "Error: Invalid space format '$raw_space'. Use formats like 500M, 10G, or plain numbers."
+        return 1
+    fi
+
+    # Normalize unit to uppercase
+    unit=$(echo "$unit" | tr '[:lower:]' '[:upper:]')
+
+    # Validate unit input
+    if [ "$unit" != "G" ] && [ "$unit" != "M" ]; then
+        echo "Error: Invalid unit '$unit'. Use 'M' for MB or 'G' for GB."
+        return 1
+    fi
+
+    # Extract available space using the selected block size
+    local available_space
+    available_space=$(df "-B${unit}" "$target_dir" | awk 'NR==2 {print $4}' | tr -d "$unit")
+
+    # Compare available space with required space
+    if [ "$available_space" -ge "$required_space" ]; then
+        echo "Success: $target_dir has ${available_space}${unit} free (Required: ${required_space}${unit})."
+        return 0
+    else
+        echo "Error: $target_dir only has ${available_space}${unit} free (Required: ${required_space}${unit})."
+        return 1
+    fi
+}
