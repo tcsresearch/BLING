@@ -12,7 +12,7 @@ check_path() {
     fi
 
     # Check existence
-    if [ -f "$1" ]; then
+    if [ -d "$1" ]; then
         echo -e "${GREEN}[ OK ]${NC} Folder $1 Exists."
         return
     else
