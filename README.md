@@ -58,6 +58,18 @@
 </div>
 
 <hr>
+ <div id="Updates_10-2026">
+  <details open>
+    <summary>
+      <b>Updates 10/2026</b>
+    </summary>
+      <ul>
+        <li> Added PreLoaderTest.sh (UNTESTED!) </li>
+      </ul>
+  </details>
+</div>
+
+<hr>
 <div id="Updates_06-2026">
   <details open>
     <summary>
