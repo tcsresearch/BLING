@@ -1,4 +1,4 @@
-check_path() {
+CheckPath_Folder() {
     # Define colors
     GREEN='\033[0;32m'
     ORANGE='\033[0;33m'
@@ -22,7 +22,7 @@ check_path() {
 }
 
 ### Main Program ###
-check_path $1
+CheckPath_Folder $1
 
 # Example usage:
 # check_path "/etc/hosts"
