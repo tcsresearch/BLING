@@ -65,6 +65,7 @@
     </summary>
       <ul>
         <li> Added PreLoaderTest.sh (UNTESTED!) </li>
+         <li> [ LATEST VERSION ] Added SanityChecker4.sh (UNTESTED!) </li>
       </ul>
   </details>
 </div>
