@@ -23,7 +23,7 @@
 <hr>
 
 <div id="Proposed-Features">
-  <details>
+  <details open>
     <summary>
       <b>Proposed Features</b>
     </summary>
@@ -38,11 +38,12 @@
 </div>
 <hr>
 <div id="TODO">
-  <details>
+  <details open>
     <summary>
     <b>TODO</b>
     </summary>
     <ul>
+      <li> :ballot_box_with_check: [ NEW ] [PLANNED] Integrate latest code from SanityChecker_Disk.bfunc or SanityChecker_Disk-v2.bfunc into SanityChecker5.sh (Not created yet!). :ballot_box_with_check: </li>
       <li> :heavy_check_mark: [TESTABLE] Finish implementing ColorLib a.k.a. Cecho. :heavy_check_mark: </li>
       <li> :heavy_check_mark:  [TESTABLE] Rename all functions to use .bfunc extension. :heavy_check_mark: </li>
       <li> :ballot_box_with_check:  [IN PROGRESS] Create Config Loader.  :ballot_box_with_check: </li> 
@@ -65,7 +66,9 @@
     </summary>
       <ul>
         <li> Added PreLoaderTest.sh (UNTESTED!) </li>
-         <li> [ LATEST VERSION ] Added SanityChecker4.sh (UNTESTED!) </li>
+         <li> [ LATEST VERSION ] Added SanityChecker4.sh w/ SanityChecker_Disk functions (UNTESTED!) </li>
+         <li> [ LATEST VERSION ] Added SanityChecker_Disk.bfunc (UNTESTED!) </li>
+         <li> [ LATEST VERSION ] Added SanityChecker_Disk-v2.bfunc w/ MB and GB autodetection (UNTESTED!) </li>
       </ul>
   </details>
 </div>
