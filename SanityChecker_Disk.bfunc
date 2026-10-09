@@ -1,0 +1,36 @@
+#######################################################################################################################
+# SanityChecker Function: DISK Space Checker (Supports MB and GB)                                                     #
+#######################################################################################################################
+SanityChecker_Disk() {
+    # Ensure directory and required space are provided
+    if [ -z "$1" ] || [ -z "$2" ]; then
+        echo "Usage: SanityChecker_Disk <directory> <required_space> [M|G]"
+        return 1
+    fi
+
+    local target_dir="$1"
+    local required_space="$2"
+    local unit="${3:-G}" # Defaults to G if not specified
+
+    # Normalize unit to uppercase
+    unit=$(echo "$unit" | tr '[:lower:]' '[:upper:]')
+
+    # Validate unit input
+    if [ "$unit" != "G" ] && [ "$unit" != "M" ]; then
+        echo "Error: Invalid unit '$unit'. Use 'M' for MB or 'G' for GB."
+        return 1
+    fi
+
+    # Extract available space using the selected block size
+    local available_space
+    available_space=$(df "-B${unit}" "$target_dir" | awk 'NR==2 {print $4}' | tr -d "$unit")
+
+    # Compare available space with required space
+    if [ "$available_space" -ge "$required_space" ]; then
+        echo "Success: $target_dir has ${available_space}${unit} free (Required: ${required_space}${unit})."
+        return 0
+    else
+        echo "Error: $target_dir only has ${available_space}${unit} free (Required: ${required_space}${unit})."
+        return 1
+    fi
+}
