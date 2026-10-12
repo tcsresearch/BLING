@@ -16,10 +16,28 @@
 | **ColorParseConfig.bfunc** | Copy Custom Files To Upgraded Release |
 | **CommandExists.bfunc** | Set File/Folder Permissions | 
 | **CronTool.bfunc** | Displays Upgrade Instructions | 
-| **11_Delete_InstallFolder.bfunc** | Backs Up, Removes, and Restores Install Folder [Security Feature]  | 
 | **DeleteConfirmationWrapper.bfunc** | Clears Cache Post-Install | 
 | **DisplayLine.bfunc** | Updates Cron Post-Install | 
 | **EchoBox.bfunc** | BLING PreLoader Utility | 
 | **ExportHacks.bfunc** | Generates CASE Code in BASH by Parsing Functions | 
 | **FLIPTool.Broken.bfunc** | RunMain Generator | 
 | **IsCechoEnabled.bfunc-DEPRICATED** | Cecho For Colorized Output | 
+| **KConfigTool.bfunc** | Kernel Configuration Tool  | 
+| **ListRepos.bfunc** | List Repos | 
+| **NewEchoBox.bfunc** | Updated Version Of EchoBox | 
+| **ParseConfig2.bfunc** | Updated Config File Parser | 
+| **Pause.bfunc** | Pause before continuing | 
+| **SanityChecker.bfunc** | Checks To Config File Exists Before Sourcing It | 
+| **SanityChecker_Cecho.bfunc** | Sanity Checker For Cecho | 
+| **SystemFunctions.bfunc** | Misc. System Functions | 
+| **Today.bfunc** | Displays Today's Date in YYYYMMDD Format, e.g. 20261012 | 
+| **Usage.bfunc** | Displays Usage  | 
+| **Utils.bfunc** | Misc. Utilities | 
+| **barels.bfunc** | Displays Barrels | 
+| **cecho_colors.bfunc** | Another Cecho Color Function | 
+| **die.bfunc** | Stop Script If Conditions  Are Met | 
+| **duls.bfunc** | Disk Usage + LS Utility | 
+| **gitls.bfunc** | Enhanced LS for Git | 
+| **safe_rm.bfunc** | Safely Use rm Command With Confirmation Before Continuing  | 
+
+
