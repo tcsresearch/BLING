@@ -3,8 +3,8 @@
 <h5>   &nbsp; &nbsp; &nbsp; Functions Folder - Collection of functions for BLING </h5>
 <hr>
 
-| File Name | Last Commit Message
-| :--- | :--- | :--- |
+| File Name | Last Commit Message |
+| :--- | :--- |
 | **BuildRoot_utility.sh** | BuildRoot Utility |
 | **Cecho.bfunc** | Database Backup & Restore |
 | **Cecho.bfunc-GOOD** | Database Backup & Restore  | 
