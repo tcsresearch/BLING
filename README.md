@@ -1,4 +1,6 @@
 
+<img src="https://github.com/tcsresearch/BLING/blob/main/BLING_Logo.jpg">
+
 <h4> BLING - Bash Library Implementation - Next Gen </h4>
 <hr>
 
