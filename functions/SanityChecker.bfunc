@@ -7,11 +7,15 @@
 # TODO #																															#
 #####################################################################################################################################
 
-# 		 If folder does not exist, create it if --mkdir option is called (Requires new CASE Statement 1.)
+# 		 [NEEDS CODE] If folder does not exist, create it if --mkdir option is called (via CASE Statement 1.)
+#        [NEEDS CODE] Create --strict option to quit if files/folders not found (via CASE Statement 1.) 
+#
+# 		Create --config/--conf, --function/--bfunc, --profile/--bprofile, and ---excludes CASE statement options (via CASE Statement 2.)
+#
 #        Enable Colors.conf sourcing.
 #        Print warning or error if file/folder not found.
-#       Create --strict option to quit if files/folders not found (Requires new CASE Statement 1.)
-# 		Create --config/--conf, --function/--bfunc, --profile/--bprofile, and ---excludes CASE statement options (Requires new CASE Statement 2.)
+#       
+
 #####################################################################################################################################
 # Colors.conf #																														#
 #####################################################################################################################################
