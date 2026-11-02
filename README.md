@@ -68,6 +68,7 @@
     </summary>
       <ul>
         <li> Added PreLoaderTest.sh (UNTESTED!) </li>
+         <li> [ LATEST VERSION ] Added Disable-IPv6.sh (UNTESTED!) </li>
          <li> [ LATEST VERSION ] Added SanityChecker4.sh w/ SanityChecker_Disk functions (UNTESTED!) </li>
          <li> [ LATEST VERSION ] Added SanityChecker_Disk.bfunc (UNTESTED!) </li>
          <li> [ LATEST VERSION ] Added SanityChecker_Disk-v2.bfunc w/ MB and GB autodetection (UNTESTED!) </li>
